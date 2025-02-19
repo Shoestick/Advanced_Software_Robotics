@@ -1,0 +1,10 @@
+/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/CMakeFiles/uninstall.dir
+/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/CMakeFiles/image_cpp_uninstall.dir
+/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/CMakeFiles/brightnessEx.dir
+/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/CMakeFiles/test.dir
+/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/CMakeFiles/edit_cache.dir
+/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/CMakeFiles/rebuild_cache.dir
+/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/CMakeFiles/list_install_components.dir
+/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/CMakeFiles/install.dir
+/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/CMakeFiles/install/local.dir
+/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/CMakeFiles/install/strip.dir

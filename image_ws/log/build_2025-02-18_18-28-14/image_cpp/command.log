@@ -1,0 +1,2 @@
+Invoking command in '/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oisin/ros2_ws/assign1/image_ws/build/image_cpp -- -j16 -l16
+Invoked command in '/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oisin/ros2_ws/assign1/image_ws/build/image_cpp -- -j16 -l16

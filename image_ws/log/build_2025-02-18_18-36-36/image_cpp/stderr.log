@@ -1,0 +1,5 @@
+[01m[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/brightness.cpp:[m[K In member function ‘[01m[Kvoid Brightness::[01;32m[KcallbackImage[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/brightness.cpp:16:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | age([01;35m[Kconst sensor_msgs::msg::Image::SharedPtr data[m[K)
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+
