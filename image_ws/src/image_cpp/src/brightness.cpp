@@ -15,8 +15,18 @@ Brightness() : Node("brightness")
 private:
     void callbackImage(const sensor_msgs::msg::Image::SharedPtr msg)
     {
-        RCLCPP_INFO(this->get_logger(), "first pixel value is '%u'", msg->data[0]);
-        
+        std::uint32_t rows = msg->height;
+        std::uint32_t step = msg->step;
+
+        int total {0};
+        for(std::size_t i{0}; i < rows * step; i++)
+        {
+            total += msg->data[i];
+        }
+        int avg { total / static_cast<int>(rows * step) };
+
+        RCLCPP_INFO(this->get_logger(), "avg pixel value is '%d'", avg);
+
     }
 
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr subscriber_;

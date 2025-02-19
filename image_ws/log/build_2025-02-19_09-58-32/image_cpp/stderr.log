@@ -1,0 +1,7 @@
+[01m[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/brightness.cpp:[m[K In member function ‘[01m[Kvoid Brightness::[01;32m[KcallbackImage[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/brightness.cpp:22:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   22 |         for(int i{0}; [01;35m[Ki < rows * step[m[K; i++)
+      |                       [01;35m[K~~^~~~~~~~~~~~~[m[K
+[01m[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/brightness.cpp:26:25:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(((uint32_t)total) / (rows * step))[m[K’ from ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} to ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+   26 |         int avg { [01;35m[Ktotal / (rows * step)[m[K };
+      |                   [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
