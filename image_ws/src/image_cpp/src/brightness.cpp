@@ -13,9 +13,10 @@ Brightness() : Node("brightness")
     }
  
 private:
-    void callbackImage(const sensor_msgs::msg::Image::SharedPtr data)
+    void callbackImage(const sensor_msgs::msg::Image::SharedPtr msg)
     {
-        RCLCPP_INFO(this->get_logger(), "got it");
+        RCLCPP_INFO(this->get_logger(), "first pixel value is '%u'", msg->data[0]);
+        
     }
 
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr subscriber_;
