@@ -9,9 +9,10 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(example_interfaces REQUIRED)
 
 add_executable(brightnessEx src/brightness.cpp)
-ament_target_dependencies(brightnessEx rclcpp sensor_msgs)
+ament_target_dependencies(brightnessEx rclcpp sensor_msgs example_interfaces)
 
 install(TARGETS 
   brightnessEx

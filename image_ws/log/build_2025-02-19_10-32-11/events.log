@@ -1,0 +1,181 @@
+[0.000000] (-) TimerEvent: {}
+[0.000386] (image_cpp) JobQueued: {'identifier': 'image_cpp', 'dependencies': OrderedDict()}
+[0.000481] (image_cpp) JobStarted: {'identifier': 'image_cpp'}
+[0.019338] (image_cpp) JobProgress: {'identifier': 'image_cpp', 'progress': 'cmake'}
+[0.022173] (image_cpp) JobProgress: {'identifier': 'image_cpp', 'progress': 'build'}
+[0.022271] (image_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp', '--', '-j16', '-l16'], 'cwd': '/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/3049-0-oisin-Legion-Slim-5-14APH8_TIME432910', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'oisin', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/oisin', 'OLDPWD': '/home/oisin/ros2_ws/assign1/image_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2577', 'SYSTEMD_EXEC_PID': '3049', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4271', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/oisin/ros2_ws/assign1/image_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'oisin', 'JOURNAL_STREAM': '8:25981', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'oisin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/oisin-Legion-Slim-5-14APH8:@/tmp/.ICE-unix/3005,unix/oisin-Legion-Slim-5-14APH8:/tmp/.ICE-unix/3005', 'INVOCATION_ID': '7357ae91210d46c0bdfe8c3518b91774', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/oisin/ros2_ws/assign1/image_ws/install/image_cpp:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:766dc99a-e829-41b9-9fea-23ce2750f29d', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/oisin/ros2_ws/assign1/image_ws/install/image_cpp:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.093330] (image_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.098146] (-) TimerEvent: {}
+[0.198640] (-) TimerEvent: {}
+[0.299175] (-) TimerEvent: {}
+[0.399805] (-) TimerEvent: {}
+[0.500392] (-) TimerEvent: {}
+[0.600941] (-) TimerEvent: {}
+[0.619528] (image_cpp) StdoutLine: {'line': b'-- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.694797] (image_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.701099] (-) TimerEvent: {}
+[0.719029] (image_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.748936] (image_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.782546] (image_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.801272] (-) TimerEvent: {}
+[0.901724] (-) TimerEvent: {}
+[0.943202] (image_cpp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.948313] (image_cpp) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.001886] (-) TimerEvent: {}
+[1.102378] (-) TimerEvent: {}
+[1.107577] (image_cpp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.202564] (-) TimerEvent: {}
+[1.273453] (image_cpp) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[1.302730] (-) TimerEvent: {}
+[1.403174] (-) TimerEvent: {}
+[1.419618] (image_cpp) StdoutLine: {'line': b'-- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)\n'}
+[1.503394] (-) TimerEvent: {}
+[1.603861] (-) TimerEvent: {}
+[1.704409] (-) TimerEvent: {}
+[1.768645] (image_cpp) StdoutLine: {'line': b'-- Configuring done (1.7s)\n'}
+[1.801535] (image_cpp) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.804542] (-) TimerEvent: {}
+[1.811644] (image_cpp) StdoutLine: {'line': b'-- Build files have been written to: /home/oisin/ros2_ws/assign1/image_ws/build/image_cpp\n'}
+[1.904801] (-) TimerEvent: {}
+[1.925578] (image_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/brightnessEx.dir/src/brightness.cpp.o\x1b[0m\n'}
+[2.004960] (-) TimerEvent: {}
+[2.105407] (-) TimerEvent: {}
+[2.205950] (-) TimerEvent: {}
+[2.306422] (-) TimerEvent: {}
+[2.406894] (-) TimerEvent: {}
+[2.507435] (-) TimerEvent: {}
+[2.607890] (-) TimerEvent: {}
+[2.708380] (-) TimerEvent: {}
+[2.808842] (-) TimerEvent: {}
+[2.909306] (-) TimerEvent: {}
+[3.009796] (-) TimerEvent: {}
+[3.110281] (-) TimerEvent: {}
+[3.210765] (-) TimerEvent: {}
+[3.311236] (-) TimerEvent: {}
+[3.411723] (-) TimerEvent: {}
+[3.512198] (-) TimerEvent: {}
+[3.612694] (-) TimerEvent: {}
+[3.713122] (-) TimerEvent: {}
+[3.813608] (-) TimerEvent: {}
+[3.914072] (-) TimerEvent: {}
+[4.014442] (-) TimerEvent: {}
+[4.114867] (-) TimerEvent: {}
+[4.215330] (-) TimerEvent: {}
+[4.316070] (-) TimerEvent: {}
+[4.416541] (-) TimerEvent: {}
+[4.517010] (-) TimerEvent: {}
+[4.617481] (-) TimerEvent: {}
+[4.717952] (-) TimerEvent: {}
+[4.818476] (-) TimerEvent: {}
+[4.918959] (-) TimerEvent: {}
+[5.019444] (-) TimerEvent: {}
+[5.120008] (-) TimerEvent: {}
+[5.220480] (-) TimerEvent: {}
+[5.320957] (-) TimerEvent: {}
+[5.421446] (-) TimerEvent: {}
+[5.521919] (-) TimerEvent: {}
+[5.622937] (-) TimerEvent: {}
+[5.723433] (-) TimerEvent: {}
+[5.823899] (-) TimerEvent: {}
+[5.924409] (-) TimerEvent: {}
+[6.024879] (-) TimerEvent: {}
+[6.061579] (image_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/brightness.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Brightness::\x1b[01;32m\x1b[KcallbackImage\x1b[m\x1b[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.061994] (image_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/brightness.cpp:38:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.062168] (image_cpp) StderrLine: {'line': b'   38 |         if(\x1b[01;35m\x1b[Kbright_ = 0\x1b[m\x1b[K) condition = "below";\n'}
+[6.062311] (image_cpp) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[6.069202] (image_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[6.069635] (image_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[6.069803] (image_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K,\n'}
+[6.069944] (image_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/brightness.cpp:1\x1b[m\x1b[K:\n'}
+[6.070076] (image_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/brightness.cpp:40:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.070228] (image_cpp) StderrLine: {'line': b'   40 |         RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"compared to threshold, avg is \'%s\'"\x1b[m\x1b[K, \x1b[32m\x1b[Kbright_\x1b[m\x1b[K);\n'}
+[6.070383] (image_cpp) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~\x1b[m\x1b[K\n'}
+[6.070533] (image_cpp) StderrLine: {'line': b'      |                                                                               \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[6.070685] (image_cpp) StderrLine: {'line': b'      |                                                                               \x1b[32m\x1b[Kint\x1b[m\x1b[K\n'}
+[6.070812] (image_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/brightness.cpp:40:74:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[6.070941] (image_cpp) StderrLine: {'line': b'   40 | CPP_INFO(this->get_logger(), "compared to threshold, avg is \'\x1b[01;36m\x1b[K%s\x1b[m\x1b[K\'", bright_);\n'}
+[6.071067] (image_cpp) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[6.071192] (image_cpp) StderrLine: {'line': b'      |                                                               \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[6.071318] (image_cpp) StderrLine: {'line': b'      |                                                               \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[6.071459] (image_cpp) StderrLine: {'line': b'      |                                                              \x1b[32m\x1b[K%d\x1b[m\x1b[K\n'}
+[6.125078] (-) TimerEvent: {}
+[6.225496] (-) TimerEvent: {}
+[6.326062] (-) TimerEvent: {}
+[6.426673] (-) TimerEvent: {}
+[6.527137] (-) TimerEvent: {}
+[6.627644] (-) TimerEvent: {}
+[6.728109] (-) TimerEvent: {}
+[6.828603] (-) TimerEvent: {}
+[6.929462] (-) TimerEvent: {}
+[7.029932] (-) TimerEvent: {}
+[7.130431] (-) TimerEvent: {}
+[7.230863] (-) TimerEvent: {}
+[7.331368] (-) TimerEvent: {}
+[7.431951] (-) TimerEvent: {}
+[7.532461] (-) TimerEvent: {}
+[7.633017] (-) TimerEvent: {}
+[7.733499] (-) TimerEvent: {}
+[7.833981] (-) TimerEvent: {}
+[7.934449] (-) TimerEvent: {}
+[8.034901] (-) TimerEvent: {}
+[8.135386] (-) TimerEvent: {}
+[8.235822] (-) TimerEvent: {}
+[8.336251] (-) TimerEvent: {}
+[8.436743] (-) TimerEvent: {}
+[8.537217] (-) TimerEvent: {}
+[8.637728] (-) TimerEvent: {}
+[8.738194] (-) TimerEvent: {}
+[8.838818] (-) TimerEvent: {}
+[8.939307] (-) TimerEvent: {}
+[9.039809] (-) TimerEvent: {}
+[9.140292] (-) TimerEvent: {}
+[9.240796] (-) TimerEvent: {}
+[9.341247] (-) TimerEvent: {}
+[9.441748] (-) TimerEvent: {}
+[9.542311] (-) TimerEvent: {}
+[9.642750] (-) TimerEvent: {}
+[9.743162] (-) TimerEvent: {}
+[9.843594] (-) TimerEvent: {}
+[9.943938] (-) TimerEvent: {}
+[10.044250] (-) TimerEvent: {}
+[10.144658] (-) TimerEvent: {}
+[10.245111] (-) TimerEvent: {}
+[10.345476] (-) TimerEvent: {}
+[10.445846] (-) TimerEvent: {}
+[10.546215] (-) TimerEvent: {}
+[10.646748] (-) TimerEvent: {}
+[10.747119] (-) TimerEvent: {}
+[10.847466] (-) TimerEvent: {}
+[10.947835] (-) TimerEvent: {}
+[11.048153] (-) TimerEvent: {}
+[11.148461] (-) TimerEvent: {}
+[11.248824] (-) TimerEvent: {}
+[11.306339] (image_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable brightnessEx\x1b[0m\n'}
+[11.348966] (-) TimerEvent: {}
+[11.449278] (-) TimerEvent: {}
+[11.530412] (image_cpp) StdoutLine: {'line': b'[100%] Built target brightnessEx\n'}
+[11.540670] (image_cpp) CommandEnded: {'returncode': 0}
+[11.541200] (image_cpp) JobProgress: {'identifier': 'image_cpp', 'progress': 'install'}
+[11.548534] (image_cpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp'], 'cwd': '/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/3049-0-oisin-Legion-Slim-5-14APH8_TIME432910', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'oisin', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/oisin', 'OLDPWD': '/home/oisin/ros2_ws/assign1/image_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2577', 'SYSTEMD_EXEC_PID': '3049', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4271', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/oisin/ros2_ws/assign1/image_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'oisin', 'JOURNAL_STREAM': '8:25981', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'oisin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/oisin-Legion-Slim-5-14APH8:@/tmp/.ICE-unix/3005,unix/oisin-Legion-Slim-5-14APH8:/tmp/.ICE-unix/3005', 'INVOCATION_ID': '7357ae91210d46c0bdfe8c3518b91774', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/oisin/ros2_ws/assign1/image_ws/install/image_cpp:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:766dc99a-e829-41b9-9fea-23ce2750f29d', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/oisin/ros2_ws/assign1/image_ws/install/image_cpp:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[11.549412] (-) TimerEvent: {}
+[11.556493] (image_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.556818] (image_cpp) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/lib/image_cpp/brightnessEx\n'}
+[11.562116] (image_cpp) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/lib/image_cpp/brightnessEx" to ""\n'}
+[11.562237] (image_cpp) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/ament_index/resource_index/package_run_dependencies/image_cpp\n'}
+[11.562326] (image_cpp) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/ament_index/resource_index/parent_prefix_path/image_cpp\n'}
+[11.562506] (image_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/image_cpp/environment/ament_prefix_path.sh\n'}
+[11.562603] (image_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/image_cpp/environment/ament_prefix_path.dsv\n'}
+[11.562711] (image_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/image_cpp/environment/path.sh\n'}
+[11.562780] (image_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/image_cpp/environment/path.dsv\n'}
+[11.562891] (image_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/image_cpp/local_setup.bash\n'}
+[11.562999] (image_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/image_cpp/local_setup.sh\n'}
+[11.563104] (image_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/image_cpp/local_setup.zsh\n'}
+[11.563212] (image_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/image_cpp/local_setup.dsv\n'}
+[11.563398] (image_cpp) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/image_cpp/package.dsv\n'}
+[11.563530] (image_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/ament_index/resource_index/packages/image_cpp\n'}
+[11.563629] (image_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/image_cpp/cmake/image_cppConfig.cmake\n'}
+[11.563731] (image_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/image_cpp/cmake/image_cppConfig-version.cmake\n'}
+[11.563826] (image_cpp) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/image_cpp/share/image_cpp/package.xml\n'}
+[11.565228] (image_cpp) CommandEnded: {'returncode': 0}
+[11.575266] (image_cpp) JobEnded: {'identifier': 'image_cpp', 'rc': 0}
+[11.576098] (-) EventReactorShutdown: {}

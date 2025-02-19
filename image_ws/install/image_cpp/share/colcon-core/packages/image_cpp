@@ -1,1 +1,1 @@
-rclcpp
+example_interfaces:rclcpp:sensor_msgs
