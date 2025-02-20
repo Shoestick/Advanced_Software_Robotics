@@ -22,11 +22,11 @@ public:
 private:
     void publishBright()
     {
-        std::string condition {"above"};
-        if(bright_ == 0) condition = "below";
+        std::string statement {"it is light"};
+        if(bright_ == 0) statement = "it is dark";
 
         auto msg = example_interfaces::msg::String();
-        msg.data = std::string("Compared to the threshold, avg is ") + condition;
+        msg.data = statement;
         publisher_->publish(msg);
     }
 
