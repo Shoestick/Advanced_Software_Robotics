@@ -9,6 +9,9 @@ class Brightness : public rclcpp::Node
 public:
     Brightness() : Node("brightness") 
     {
+        // declare then get parameter
+        this->declare_parameter("threshold", 130);
+
         subscriber_ = this->create_subscription<sensor_msgs::msg::Image>(
         "image", 10,
         std::bind(&Brightness::callbackImage, this, std::placeholders::_1));
@@ -44,13 +47,14 @@ private:
         // so I'm judging this static cast as okay
         int avg { total / static_cast<int>(rows * step) };
 
-        const int threshold = 130;
-        if(avg > threshold) bright_ = 1;
+        threshold_ = this->get_parameter("threshold").as_int();
+        if(avg > threshold_) bright_ = 1;
         else bright_ = 0;
 
         RCLCPP_INFO(this->get_logger(), "avg is currently '%d'", avg);
     }
 
+    int threshold_ {0};
     bool bright_ {0};
     rclcpp::Publisher<example_interfaces::msg::String>::SharedPtr publisher_;
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr subscriber_;
