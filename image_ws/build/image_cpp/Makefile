@@ -210,6 +210,19 @@ brightnessEx/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightnessEx.dir/build.make CMakeFiles/brightnessEx.dir/build
 .PHONY : brightnessEx/fast
 
+#=============================================================================
+# Target rules for targets named obj_pos
+
+# Build rule for target.
+obj_pos: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 obj_pos
+.PHONY : obj_pos
+
+# fast build rule for target.
+obj_pos/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obj_pos.dir/build.make CMakeFiles/obj_pos.dir/build
+.PHONY : obj_pos/fast
+
 src/brightness.o: src/brightness.cpp.o
 .PHONY : src/brightness.o
 
@@ -234,6 +247,30 @@ src/brightness.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightnessEx.dir/build.make CMakeFiles/brightnessEx.dir/src/brightness.cpp.s
 .PHONY : src/brightness.cpp.s
 
+src/obj_pos.o: src/obj_pos.cpp.o
+.PHONY : src/obj_pos.o
+
+# target to build an object file
+src/obj_pos.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obj_pos.dir/build.make CMakeFiles/obj_pos.dir/src/obj_pos.cpp.o
+.PHONY : src/obj_pos.cpp.o
+
+src/obj_pos.i: src/obj_pos.cpp.i
+.PHONY : src/obj_pos.i
+
+# target to preprocess a source file
+src/obj_pos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obj_pos.dir/build.make CMakeFiles/obj_pos.dir/src/obj_pos.cpp.i
+.PHONY : src/obj_pos.cpp.i
+
+src/obj_pos.s: src/obj_pos.cpp.s
+.PHONY : src/obj_pos.s
+
+# target to generate assembly for a file
+src/obj_pos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obj_pos.dir/build.make CMakeFiles/obj_pos.dir/src/obj_pos.cpp.s
+.PHONY : src/obj_pos.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... image_cpp_uninstall"
 	@echo "... uninstall"
 	@echo "... brightnessEx"
+	@echo "... obj_pos"
 	@echo "... src/brightness.o"
 	@echo "... src/brightness.i"
 	@echo "... src/brightness.s"
+	@echo "... src/obj_pos.o"
+	@echo "... src/obj_pos.i"
+	@echo "... src/obj_pos.s"
 .PHONY : help
 
 

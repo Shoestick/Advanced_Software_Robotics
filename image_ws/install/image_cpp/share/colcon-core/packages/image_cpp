@@ -1,1 +1,1 @@
-example_interfaces:rclcpp:sensor_msgs
+cv_bridge:example_interfaces:opencv2:rclcpp:sensor_msgs
