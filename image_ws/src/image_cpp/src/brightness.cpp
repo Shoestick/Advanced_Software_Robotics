@@ -9,20 +9,24 @@ class Brightness : public rclcpp::Node
 public:
     Brightness() : Node("brightness") 
     {
-        // declare then get parameter
+        // declare parameter to later get
         this->declare_parameter("threshold", 130);
 
+        // begin subscriber to /image, call callbackImage when recieving something from the topic
         subscriber_ = this->create_subscription<sensor_msgs::msg::Image>(
         "image", 10,
         std::bind(&Brightness::callbackImage, this, std::placeholders::_1));
         
+        // create a publisher called /bright, publish publishBright every half second
         publisher_ = this->create_publisher<example_interfaces::msg::String>("bright", 10);
         timer_ = this->create_wall_timer(0.5s, std::bind(&Brightness::publishBright, this));
         
+        // text to terminal when starting
         RCLCPP_INFO(this->get_logger(), "Brightness node has begun");
     }
  
 private:
+    // publish whether or not average brightness of image is above or below threshold
     void publishBright()
     {
         std::string statement {"it is light"};
@@ -33,6 +37,7 @@ private:
         publisher_->publish(msg);
     }
 
+    // 
     void callbackImage(const sensor_msgs::msg::Image::SharedPtr msg)
     {
         std::uint32_t rows = msg->height;

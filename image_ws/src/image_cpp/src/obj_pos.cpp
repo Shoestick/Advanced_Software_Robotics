@@ -13,6 +13,8 @@ class ObjectPosNode : public rclcpp::Node
 public:
     ObjectPosNode() : Node("obj_pos")
     {
+        this->declare_parameter("threshold", 130);
+
         subscriber_ = this->create_subscription<sensor_msgs::msg::Image>(
         "image", 10,
         std::bind(&ObjectPosNode::callbackImage, this, std::placeholders::_1));
@@ -25,12 +27,21 @@ private:
     {
         // will need to change the "bgr8" to manage other formats of image
         cv::Mat image = cv_bridge::toCvCopy(msg, "bgr8")->image;
-        cv::Mat grey;
+        cv::Mat grey {};
         cvtColor(image, grey, CV_BGR2GRAY);
-        cv::imshow("OpenCV window", grey);
+
+        cv::Mat dst {};
+
+        int const threshold_type {0};
+        threshold_value_ = this->get_parameter("threshold").as_int();
+
+        threshold( grey, dst, threshold_value_, 255, threshold_type );
+
+        cv::imshow("OpenCV window", dst);
         cv::waitKey('q');       
     }
 
+    int threshold_value_ {};
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr subscriber_;
 };
  
