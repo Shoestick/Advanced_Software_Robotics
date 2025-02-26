@@ -25,7 +25,9 @@ private:
     {
         // will need to change the "bgr8" to manage other formats of image
         cv::Mat image = cv_bridge::toCvCopy(msg, "bgr8")->image;
-        cv::imshow("OpenCV window", image);
+        cv::Mat grey;
+        cvtColor(image, grey, CV_BGR2GRAY);
+        cv::imshow("OpenCV window", grey);
         cv::waitKey('q');       
     }
 
