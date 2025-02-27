@@ -797,5 +797,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/image_cpp_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/detector.dir/DependInfo.cmake"
-  "CMakeFiles/obj_pos.dir/DependInfo.cmake"
+  "CMakeFiles/position.dir/DependInfo.cmake"
   )

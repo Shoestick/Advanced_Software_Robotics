@@ -211,17 +211,17 @@ detector/fast:
 .PHONY : detector/fast
 
 #=============================================================================
-# Target rules for targets named obj_pos
+# Target rules for targets named position
 
 # Build rule for target.
-obj_pos: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 obj_pos
-.PHONY : obj_pos
+position: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 position
+.PHONY : position
 
 # fast build rule for target.
-obj_pos/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/obj_pos.dir/build.make CMakeFiles/obj_pos.dir/build
-.PHONY : obj_pos/fast
+position/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/position.dir/build.make CMakeFiles/position.dir/build
+.PHONY : position/fast
 
 src/light_detector.o: src/light_detector.cpp.o
 .PHONY : src/light_detector.o
@@ -247,29 +247,29 @@ src/light_detector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/detector.dir/build.make CMakeFiles/detector.dir/src/light_detector.cpp.s
 .PHONY : src/light_detector.cpp.s
 
-src/obj_pos.o: src/obj_pos.cpp.o
-.PHONY : src/obj_pos.o
+src/object_position.o: src/object_position.cpp.o
+.PHONY : src/object_position.o
 
 # target to build an object file
-src/obj_pos.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/obj_pos.dir/build.make CMakeFiles/obj_pos.dir/src/obj_pos.cpp.o
-.PHONY : src/obj_pos.cpp.o
+src/object_position.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/position.dir/build.make CMakeFiles/position.dir/src/object_position.cpp.o
+.PHONY : src/object_position.cpp.o
 
-src/obj_pos.i: src/obj_pos.cpp.i
-.PHONY : src/obj_pos.i
+src/object_position.i: src/object_position.cpp.i
+.PHONY : src/object_position.i
 
 # target to preprocess a source file
-src/obj_pos.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/obj_pos.dir/build.make CMakeFiles/obj_pos.dir/src/obj_pos.cpp.i
-.PHONY : src/obj_pos.cpp.i
+src/object_position.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/position.dir/build.make CMakeFiles/position.dir/src/object_position.cpp.i
+.PHONY : src/object_position.cpp.i
 
-src/obj_pos.s: src/obj_pos.cpp.s
-.PHONY : src/obj_pos.s
+src/object_position.s: src/object_position.cpp.s
+.PHONY : src/object_position.s
 
 # target to generate assembly for a file
-src/obj_pos.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/obj_pos.dir/build.make CMakeFiles/obj_pos.dir/src/obj_pos.cpp.s
-.PHONY : src/obj_pos.cpp.s
+src/object_position.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/position.dir/build.make CMakeFiles/position.dir/src/object_position.cpp.s
+.PHONY : src/object_position.cpp.s
 
 # Help Target
 help:
@@ -287,13 +287,13 @@ help:
 	@echo "... image_cpp_uninstall"
 	@echo "... uninstall"
 	@echo "... detector"
-	@echo "... obj_pos"
+	@echo "... position"
 	@echo "... src/light_detector.o"
 	@echo "... src/light_detector.i"
 	@echo "... src/light_detector.s"
-	@echo "... src/obj_pos.o"
-	@echo "... src/obj_pos.i"
-	@echo "... src/obj_pos.s"
+	@echo "... src/object_position.o"
+	@echo "... src/object_position.i"
+	@echo "... src/object_position.s"
 .PHONY : help
 
 

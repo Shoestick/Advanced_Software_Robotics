@@ -20,13 +20,13 @@ find_package(assign1_interfaces REQUIRED)
 add_executable(detector src/light_detector.cpp)
 ament_target_dependencies(detector rclcpp sensor_msgs example_interfaces)
 
-add_executable(obj_pos src/obj_pos.cpp)
-target_link_libraries(obj_pos ${OpenCV_LIBS})
-ament_target_dependencies(obj_pos rclcpp cv_bridge OpenCV assign1_interfaces)
+add_executable(position src/object_position.cpp)
+target_link_libraries(position ${OpenCV_LIBS})
+ament_target_dependencies(position rclcpp cv_bridge OpenCV assign1_interfaces)
 
 install(TARGETS 
   detector
-  obj_pos
+  position
   DESTINATION lib/${PROJECT_NAME}
 )
 

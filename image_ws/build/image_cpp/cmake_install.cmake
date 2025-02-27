@@ -67,27 +67,27 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/obj_pos" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/obj_pos")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/position" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/position")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/obj_pos"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/position"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/image_cpp" TYPE EXECUTABLE FILES "/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/obj_pos")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/obj_pos" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/obj_pos")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/image_cpp" TYPE EXECUTABLE FILES "/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/position")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/position" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/position")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/obj_pos"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/position"
          OLD_RPATH "/opt/ros/jazzy/lib:/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/obj_pos")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/position")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/CMakeFiles/obj_pos.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/CMakeFiles/position.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
