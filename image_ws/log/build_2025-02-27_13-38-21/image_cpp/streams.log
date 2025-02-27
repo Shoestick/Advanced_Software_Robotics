@@ -1,0 +1,27 @@
+[0.027s] Invoking command in '/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp': AMENT_PREFIX_PATH=/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/oisin/ros2_ws/assign1/image_ws/build/image_cpp -- -j16 -l16
+[0.094s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.593s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.652s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.671s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.693s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.722s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.877s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.879s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.028s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.190s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.337s] -- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)
+[1.473s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[1.507s] -- Found assign1_interfaces: 0.0.0 (/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake)
+[1.723s] -- Configuring done (1.6s)
+[1.768s] -- Generating done (0.0s)
+[1.780s] -- Build files have been written to: /home/oisin/ros2_ws/assign1/image_ws/build/image_cpp
+[1.885s] [ 50%] Built target brightnessEx
+[1.887s] [ 75%] [32mBuilding CXX object CMakeFiles/obj_pos.dir/src/obj_pos.cpp.o[0m
+[2.485s] [01m[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/obj_pos.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kassign1_interfaces/msg/pixel_coordinates.hpp: No such file or directory
+[2.485s]     6 | #include [01;31m[K"assign1_interfaces/msg/pixel_coordinates.hpp"[m[K
+[2.486s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.486s] compilation terminated.
+[2.500s] gmake[2]: *** [CMakeFiles/obj_pos.dir/build.make:76: CMakeFiles/obj_pos.dir/src/obj_pos.cpp.o] Error 1
+[2.501s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/obj_pos.dir/all] Error 2
+[2.502s] gmake: *** [Makefile:146: all] Error 2
+[2.508s] Invoked command in '/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp' returned '2': AMENT_PREFIX_PATH=/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/oisin/ros2_ws/assign1/image_ws/build/image_cpp -- -j16 -l16

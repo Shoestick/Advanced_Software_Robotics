@@ -694,6 +694,12 @@ CMakeFiles/obj_pos.dir/src/obj_pos.cpp.o: \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/pixel_coordinates.hpp \
+ /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__struct.hpp \
+ /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__builder.hpp \
+ /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__traits.hpp \
+ /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__type_support.hpp \
+ /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp \

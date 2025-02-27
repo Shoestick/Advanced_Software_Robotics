@@ -1,0 +1,340 @@
+[0.000000] (-) TimerEvent: {}
+[0.001622] (-) JobUnselected: {'identifier': 'image_cpp'}
+[0.001717] (assign1_interfaces) JobQueued: {'identifier': 'assign1_interfaces', 'dependencies': OrderedDict()}
+[0.001757] (assign1_interfaces) JobStarted: {'identifier': 'assign1_interfaces'}
+[0.023951] (assign1_interfaces) JobProgress: {'identifier': 'assign1_interfaces', 'progress': 'cmake'}
+[0.025817] (assign1_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/oisin/ros2_ws/assign1/image_ws/src/assign1_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces'], 'cwd': '/home/oisin/ros2_ws/assign1/image_ws/build/assign1_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'oisin', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/oisin', 'OLDPWD': '/home/oisin/ros2_ws/assign1/image_ws/src/assign1_interfaces/msg', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2472', 'SYSTEMD_EXEC_PID': '3070', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3813', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'oisin', 'JOURNAL_STREAM': '9:15323', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'oisin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/oisin-Legion-Slim-5-14APH8:@/tmp/.ICE-unix/2898,unix/oisin-Legion-Slim-5-14APH8:/tmp/.ICE-unix/2898', 'INVOCATION_ID': '13070d1b3ffb48cb87cbd60431b4c7eb', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:8ab07bfb-212b-4f93-a823-1c9195dd3d76', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/oisin/ros2_ws/assign1/image_ws/build/assign1_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099460] (-) TimerEvent: {}
+[0.200121] (-) TimerEvent: {}
+[0.209973] (assign1_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.300384] (-) TimerEvent: {}
+[0.389900] (assign1_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.400496] (-) TimerEvent: {}
+[0.424897] (assign1_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500755] (-) TimerEvent: {}
+[0.601390] (-) TimerEvent: {}
+[0.654771] (assign1_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.673472] (assign1_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.680634] (assign1_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.681798] (assign1_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.701540] (-) TimerEvent: {}
+[0.706225] (assign1_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.801846] (-) TimerEvent: {}
+[0.902478] (-) TimerEvent: {}
+[0.960022] (assign1_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.979165] (assign1_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.979859] (assign1_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.980845] (assign1_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.995194] (assign1_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.002719] (-) TimerEvent: {}
+[1.103135] (-) TimerEvent: {}
+[1.203509] (-) TimerEvent: {}
+[1.303922] (-) TimerEvent: {}
+[1.327549] (assign1_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.404094] (-) TimerEvent: {}
+[1.504533] (-) TimerEvent: {}
+[1.580003] (assign1_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.593581] (assign1_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.604707] (-) TimerEvent: {}
+[1.705208] (-) TimerEvent: {}
+[1.722908] (assign1_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.805410] (-) TimerEvent: {}
+[1.828869] (assign1_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.905556] (-) TimerEvent: {}
+[2.005993] (-) TimerEvent: {}
+[2.106406] (-) TimerEvent: {}
+[2.206846] (-) TimerEvent: {}
+[2.307260] (-) TimerEvent: {}
+[2.407695] (-) TimerEvent: {}
+[2.508157] (-) TimerEvent: {}
+[2.608575] (-) TimerEvent: {}
+[2.709056] (-) TimerEvent: {}
+[2.809481] (-) TimerEvent: {}
+[2.909933] (-) TimerEvent: {}
+[3.010368] (-) TimerEvent: {}
+[3.100340] (assign1_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[3.110536] (-) TimerEvent: {}
+[3.210901] (-) TimerEvent: {}
+[3.311336] (-) TimerEvent: {}
+[3.411763] (-) TimerEvent: {}
+[3.512215] (-) TimerEvent: {}
+[3.612655] (-) TimerEvent: {}
+[3.713178] (-) TimerEvent: {}
+[3.813607] (-) TimerEvent: {}
+[3.914159] (-) TimerEvent: {}
+[4.014581] (-) TimerEvent: {}
+[4.055876] (assign1_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.115084] (-) TimerEvent: {}
+[4.215518] (-) TimerEvent: {}
+[4.316081] (-) TimerEvent: {}
+[4.416588] (-) TimerEvent: {}
+[4.517043] (-) TimerEvent: {}
+[4.617469] (-) TimerEvent: {}
+[4.717903] (-) TimerEvent: {}
+[4.818326] (-) TimerEvent: {}
+[4.918757] (-) TimerEvent: {}
+[5.019230] (-) TimerEvent: {}
+[5.119647] (-) TimerEvent: {}
+[5.220099] (-) TimerEvent: {}
+[5.295631] (assign1_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.309327] (assign1_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[5.320268] (-) TimerEvent: {}
+[5.420686] (-) TimerEvent: {}
+[5.521170] (-) TimerEvent: {}
+[5.609976] (assign1_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[5.621335] (-) TimerEvent: {}
+[5.721763] (-) TimerEvent: {}
+[5.822366] (-) TimerEvent: {}
+[5.922836] (-) TimerEvent: {}
+[6.023242] (-) TimerEvent: {}
+[6.123612] (-) TimerEvent: {}
+[6.224067] (-) TimerEvent: {}
+[6.324515] (-) TimerEvent: {}
+[6.424985] (-) TimerEvent: {}
+[6.525419] (-) TimerEvent: {}
+[6.570666] (assign1_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[6.625606] (-) TimerEvent: {}
+[6.661285] (assign1_interfaces) StdoutLine: {'line': b'-- Configuring done (6.6s)\n'}
+[6.725840] (-) TimerEvent: {}
+[6.731650] (assign1_interfaces) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[6.754517] (assign1_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/oisin/ros2_ws/assign1/image_ws/build/assign1_interfaces\n'}
+[6.767815] (assign1_interfaces) CommandEnded: {'returncode': 0}
+[6.770369] (assign1_interfaces) JobProgress: {'identifier': 'assign1_interfaces', 'progress': 'build'}
+[6.770430] (assign1_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/oisin/ros2_ws/assign1/image_ws/build/assign1_interfaces', '--', '-j16', '-l16'], 'cwd': '/home/oisin/ros2_ws/assign1/image_ws/build/assign1_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'oisin', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/oisin', 'OLDPWD': '/home/oisin/ros2_ws/assign1/image_ws/src/assign1_interfaces/msg', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2472', 'SYSTEMD_EXEC_PID': '3070', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3813', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'oisin', 'JOURNAL_STREAM': '9:15323', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'oisin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/oisin-Legion-Slim-5-14APH8:@/tmp/.ICE-unix/2898,unix/oisin-Legion-Slim-5-14APH8:/tmp/.ICE-unix/2898', 'INVOCATION_ID': '13070d1b3ffb48cb87cbd60431b4c7eb', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:8ab07bfb-212b-4f93-a823-1c9195dd3d76', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/oisin/ros2_ws/assign1/image_ws/build/assign1_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[6.826027] (-) TimerEvent: {}
+[6.885475] (assign1_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[6.905710] (assign1_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_assign1_interfaces\n'}
+[6.926182] (-) TimerEvent: {}
+[7.026646] (-) TimerEvent: {}
+[7.127128] (-) TimerEvent: {}
+[7.227508] (-) TimerEvent: {}
+[7.274866] (assign1_interfaces) StdoutLine: {'line': b'[  2%] Built target assign1_interfaces__rosidl_generator_type_description\n'}
+[7.298208] (assign1_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[7.322124] (assign1_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[7.327645] (-) TimerEvent: {}
+[7.333035] (assign1_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[7.334833] (assign1_interfaces) StdoutLine: {'line': b'creating assign1_interfaces.egg-info\n'}
+[7.368464] (assign1_interfaces) StdoutLine: {'line': b'writing assign1_interfaces.egg-info/PKG-INFO\n'}
+[7.369081] (assign1_interfaces) StdoutLine: {'line': b'writing dependency_links to assign1_interfaces.egg-info/dependency_links.txt\n'}
+[7.369348] (assign1_interfaces) StdoutLine: {'line': b'writing top-level names to assign1_interfaces.egg-info/top_level.txt\n'}
+[7.369635] (assign1_interfaces) StdoutLine: {'line': b"writing manifest file 'assign1_interfaces.egg-info/SOURCES.txt'\n"}
+[7.427841] (-) TimerEvent: {}
+[7.470222] (assign1_interfaces) StdoutLine: {'line': b"reading manifest file 'assign1_interfaces.egg-info/SOURCES.txt'\n"}
+[7.471256] (assign1_interfaces) StdoutLine: {'line': b"writing manifest file 'assign1_interfaces.egg-info/SOURCES.txt'\n"}
+[7.525686] (assign1_interfaces) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_build_assign1_interfaces_egg\n'}
+[7.528066] (-) TimerEvent: {}
+[7.628585] (-) TimerEvent: {}
+[7.729065] (-) TimerEvent: {}
+[7.764174] (assign1_interfaces) StdoutLine: {'line': b'[  8%] Built target assign1_interfaces__cpp\n'}
+[7.809368] (assign1_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/assign1_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assign1_interfaces/msg/detail/pixel_coordinates__description.c.o\x1b[0m\n'}
+[7.809873] (assign1_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/assign1_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assign1_interfaces/msg/detail/pixel_coordinates__functions.c.o\x1b[0m\n'}
+[7.810082] (assign1_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/assign1_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assign1_interfaces/msg/detail/pixel_coordinates__type_support.c.o\x1b[0m\n'}
+[7.829261] (-) TimerEvent: {}
+[7.918830] (assign1_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libassign1_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[7.929432] (-) TimerEvent: {}
+[8.003204] (assign1_interfaces) StdoutLine: {'line': b'[ 20%] Built target assign1_interfaces__rosidl_generator_c\n'}
+[8.025826] (assign1_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.026270] (assign1_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.026451] (assign1_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.026736] (assign1_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[8.027323] (assign1_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.027610] (assign1_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[8.029562] (-) TimerEvent: {}
+[8.130434] (-) TimerEvent: {}
+[8.230884] (-) TimerEvent: {}
+[8.331341] (-) TimerEvent: {}
+[8.431862] (-) TimerEvent: {}
+[8.448648] (assign1_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/assign1_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assign1_interfaces/msg/pixel_coordinates__type_support.cpp.o\x1b[0m\n'}
+[8.453179] (assign1_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/assign1_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assign1_interfaces/msg/pixel_coordinates__type_support.cpp.o\x1b[0m\n'}
+[8.467606] (assign1_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/assign1_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assign1_interfaces/msg/detail/pixel_coordinates__type_support.cpp.o\x1b[0m\n'}
+[8.487532] (assign1_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/assign1_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assign1_interfaces/msg/detail/pixel_coordinates__type_support.c.o\x1b[0m\n'}
+[8.511594] (assign1_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/assign1_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assign1_interfaces/msg/detail/dds_fastrtps/pixel_coordinates__type_support.cpp.o\x1b[0m\n'}
+[8.527926] (assign1_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/assign1_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assign1_interfaces/msg/detail/pixel_coordinates__type_support_c.cpp.o\x1b[0m\n'}
+[8.532006] (-) TimerEvent: {}
+[8.544351] (assign1_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libassign1_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[8.567504] (assign1_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libassign1_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[8.632195] (-) TimerEvent: {}
+[8.634681] (assign1_interfaces) StdoutLine: {'line': b'[ 61%] Built target assign1_interfaces__rosidl_typesupport_c\n'}
+[8.638463] (assign1_interfaces) StdoutLine: {'line': b'[ 61%] Built target assign1_interfaces__rosidl_typesupport_introspection_c\n'}
+[8.732397] (-) TimerEvent: {}
+[8.833004] (-) TimerEvent: {}
+[8.933498] (-) TimerEvent: {}
+[9.030180] (assign1_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libassign1_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[9.033639] (-) TimerEvent: {}
+[9.056386] (assign1_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libassign1_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[9.115316] (assign1_interfaces) StdoutLine: {'line': b'[ 67%] Built target assign1_interfaces__rosidl_typesupport_cpp\n'}
+[9.133887] (-) TimerEvent: {}
+[9.141762] (assign1_interfaces) StdoutLine: {'line': b'[ 67%] Built target assign1_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[9.234080] (-) TimerEvent: {}
+[9.334527] (-) TimerEvent: {}
+[9.346506] (assign1_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libassign1_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[9.346886] (assign1_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libassign1_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[9.434826] (-) TimerEvent: {}
+[9.436681] (assign1_interfaces) StdoutLine: {'line': b'[ 73%] Built target assign1_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[9.436987] (assign1_interfaces) StdoutLine: {'line': b'[ 73%] Built target assign1_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[9.477543] (assign1_interfaces) StdoutLine: {'line': b'[ 73%] Built target assign1_interfaces\n'}
+[9.515797] (assign1_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[9.534993] (-) TimerEvent: {}
+[9.635407] (-) TimerEvent: {}
+[9.735851] (-) TimerEvent: {}
+[9.836282] (-) TimerEvent: {}
+[9.906470] (assign1_interfaces) StdoutLine: {'line': b'[ 76%] Built target assign1_interfaces__py\n'}
+[9.936468] (-) TimerEvent: {}
+[9.941738] (assign1_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/assign1_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assign1_interfaces/msg/_pixel_coordinates_s.c.o\x1b[0m\n'}
+[10.036628] (-) TimerEvent: {}
+[10.111675] (assign1_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library libassign1_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[10.136832] (-) TimerEvent: {}
+[10.172347] (assign1_interfaces) StdoutLine: {'line': b'[ 82%] Built target assign1_interfaces__rosidl_generator_py\n'}
+[10.203999] (assign1_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/assign1_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/assign1_interfaces/_assign1_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[10.204323] (assign1_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/assign1_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/assign1_interfaces/_assign1_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[10.204603] (assign1_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/assign1_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/assign1_interfaces/_assign1_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[10.237025] (-) TimerEvent: {}
+[10.331345] (assign1_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/assign1_interfaces/assign1_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.331914] (assign1_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/assign1_interfaces/assign1_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.337175] (-) TimerEvent: {}
+[10.344054] (assign1_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/assign1_interfaces/assign1_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.378615] (assign1_interfaces) StdoutLine: {'line': b'[100%] Built target assign1_interfaces_s__rosidl_typesupport_c\n'}
+[10.382140] (assign1_interfaces) StdoutLine: {'line': b'[100%] Built target assign1_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[10.393135] (assign1_interfaces) StdoutLine: {'line': b'[100%] Built target assign1_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[10.411942] (assign1_interfaces) CommandEnded: {'returncode': 0}
+[10.412845] (assign1_interfaces) JobProgress: {'identifier': 'assign1_interfaces', 'progress': 'install'}
+[10.427530] (assign1_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/oisin/ros2_ws/assign1/image_ws/build/assign1_interfaces'], 'cwd': '/home/oisin/ros2_ws/assign1/image_ws/build/assign1_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'oisin', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/oisin', 'OLDPWD': '/home/oisin/ros2_ws/assign1/image_ws/src/assign1_interfaces/msg', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2472', 'SYSTEMD_EXEC_PID': '3070', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3813', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'oisin', 'JOURNAL_STREAM': '9:15323', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'oisin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/oisin-Legion-Slim-5-14APH8:@/tmp/.ICE-unix/2898,unix/oisin-Legion-Slim-5-14APH8:/tmp/.ICE-unix/2898', 'INVOCATION_ID': '13070d1b3ffb48cb87cbd60431b4c7eb', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:8ab07bfb-212b-4f93-a823-1c9195dd3d76', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/oisin/ros2_ws/assign1/image_ws/build/assign1_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[10.437344] (-) TimerEvent: {}
+[10.439626] (assign1_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.440610] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/ament_index/resource_index/rosidl_interfaces/assign1_interfaces\n'}
+[10.441538] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/msg/PixelCoordinates.json\n'}
+[10.442267] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces\n'}
+[10.442466] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg\n'}
+[10.442573] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.442908] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail\n'}
+[10.443029] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__struct.h\n'}
+[10.443138] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__type_support.c\n'}
+[10.443237] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__functions.h\n'}
+[10.443542] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__description.c\n'}
+[10.443716] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__functions.c\n'}
+[10.443937] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__type_support.h\n'}
+[10.444036] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/pixel_coordinates.h\n'}
+[10.444131] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/environment/library_path.sh\n'}
+[10.444253] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/environment/library_path.dsv\n'}
+[10.444393] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_generator_c.so\n'}
+[10.444920] (assign1_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_generator_c.so" to ""\n'}
+[10.445143] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces\n'}
+[10.445333] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg\n'}
+[10.445440] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.445579] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail\n'}
+[10.445673] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__rosidl_typesupport_fastrtps_c.h\n'}
+[10.445830] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[10.446180] (assign1_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.446435] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces\n'}
+[10.446563] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg\n'}
+[10.446664] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.446920] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail\n'}
+[10.447197] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__type_support.c\n'}
+[10.447443] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__rosidl_typesupport_introspection_c.h\n'}
+[10.447596] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[10.447808] (assign1_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.447960] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_typesupport_c.so\n'}
+[10.448265] (assign1_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[10.448494] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces\n'}
+[10.448603] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg\n'}
+[10.448693] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[10.448846] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/pixel_coordinates.hpp\n'}
+[10.448957] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail\n'}
+[10.449071] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__type_support.hpp\n'}
+[10.449156] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__builder.hpp\n'}
+[10.449282] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__traits.hpp\n'}
+[10.449364] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__struct.hpp\n'}
+[10.449477] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces\n'}
+[10.449578] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg\n'}
+[10.449703] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.449839] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail\n'}
+[10.449928] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.450024] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/dds_fastrtps\n'}
+[10.450166] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.450593] (assign1_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[10.450719] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces\n'}
+[10.450815] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg\n'}
+[10.450942] (assign1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail\n'}
+[10.451023] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__type_support.cpp\n'}
+[10.451140] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.451254] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[10.451615] (assign1_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[10.451743] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_typesupport_cpp.so\n'}
+[10.452152] (assign1_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[10.452279] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/environment/pythonpath.sh\n'}
+[10.452401] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/environment/pythonpath.dsv\n'}
+[10.452518] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces-0.0.0-py3.12.egg-info\n'}
+[10.452721] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[10.452975] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[10.453212] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[10.453328] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[10.453471] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces\n'}
+[10.453602] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/__init__.py\n'}
+[10.453721] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/_assign1_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[10.453857] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/_assign1_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[10.454009] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/_assign1_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[10.454169] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/assign1_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[10.454406] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/msg\n'}
+[10.454529] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/msg/__init__.py\n'}
+[10.454708] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/msg/_pixel_coordinates.py\n'}
+[10.454904] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/msg/_pixel_coordinates_s.c\n'}
+[10.455128] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/assign1_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[10.455336] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/assign1_interfaces_s__rosidl_typesupport_c.so\n'}
+[10.504763] (assign1_interfaces) StdoutLine: {'line': b"Listing '/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces'...\n"}
+[10.505161] (assign1_interfaces) StdoutLine: {'line': b"Compiling '/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/__init__.py'...\n"}
+[10.505351] (assign1_interfaces) StdoutLine: {'line': b"Listing '/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/msg'...\n"}
+[10.505499] (assign1_interfaces) StdoutLine: {'line': b"Compiling '/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/msg/__init__.py'...\n"}
+[10.505638] (assign1_interfaces) StdoutLine: {'line': b"Compiling '/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/msg/_pixel_coordinates.py'...\n"}
+[10.512236] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/assign1_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[10.512937] (assign1_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/assign1_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.513290] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/assign1_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[10.513678] (assign1_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/assign1_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.513937] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/assign1_interfaces_s__rosidl_typesupport_c.so\n'}
+[10.514262] (assign1_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/python3.12/site-packages/assign1_interfaces/assign1_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[10.514482] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_generator_py.so\n'}
+[10.514749] (assign1_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/lib/libassign1_interfaces__rosidl_generator_py.so" to ""\n'}
+[10.515136] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/msg/PixelCoordinates.idl\n'}
+[10.515332] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/msg/PixelCoordinates.msg\n'}
+[10.515568] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/ament_index/resource_index/package_run_dependencies/assign1_interfaces\n'}
+[10.515764] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/ament_index/resource_index/parent_prefix_path/assign1_interfaces\n'}
+[10.516001] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/environment/ament_prefix_path.sh\n'}
+[10.516145] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/environment/ament_prefix_path.dsv\n'}
+[10.516280] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/environment/path.sh\n'}
+[10.516366] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/environment/path.dsv\n'}
+[10.516494] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/local_setup.bash\n'}
+[10.516613] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/local_setup.sh\n'}
+[10.516861] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/local_setup.zsh\n'}
+[10.517097] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/local_setup.dsv\n'}
+[10.517278] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/package.dsv\n'}
+[10.517464] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/ament_index/resource_index/packages/assign1_interfaces\n'}
+[10.517723] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/export_assign1_interfaces__rosidl_generator_cExport.cmake\n'}
+[10.517945] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/export_assign1_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[10.518157] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/export_assign1_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[10.518406] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/export_assign1_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[10.518635] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/assign1_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[10.518822] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/assign1_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[10.518954] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/assign1_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[10.519183] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/assign1_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[10.519344] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/export_assign1_interfaces__rosidl_generator_cppExport.cmake\n'}
+[10.519545] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/export_assign1_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[10.519720] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/export_assign1_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[10.519940] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/assign1_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[10.520128] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/assign1_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[10.520394] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/assign1_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[10.520600] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/assign1_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[10.520758] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/export_assign1_interfaces__rosidl_generator_pyExport.cmake\n'}
+[10.520991] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/export_assign1_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[10.521216] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[10.521371] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.521610] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.521820] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.521996] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[10.522181] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.522358] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[10.522584] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/assign1_interfacesConfig.cmake\n'}
+[10.522793] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/cmake/assign1_interfacesConfig-version.cmake\n'}
+[10.522956] (assign1_interfaces) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/share/assign1_interfaces/package.xml\n'}
+[10.526635] (assign1_interfaces) CommandEnded: {'returncode': 0}
+[10.537611] (-) TimerEvent: {}
+[10.556959] (assign1_interfaces) JobEnded: {'identifier': 'assign1_interfaces', 'rc': 0}
+[10.558182] (-) EventReactorShutdown: {}

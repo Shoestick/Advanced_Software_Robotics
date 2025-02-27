@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "assign1_interfaces/msg/PixelCoordinates",
+      "fields": [
+        {
+          "name": "x",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "y",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "assign1_interfaces/msg/PixelCoordinates",
+      "hash_string": "RIHS01_763ca4abc4993d703d300930b69b55f1fd1f42233c3159c730a9694caeedf410"
+    }
+  ]
+}

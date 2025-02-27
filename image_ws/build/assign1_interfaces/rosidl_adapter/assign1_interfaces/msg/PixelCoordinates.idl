@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from assign1_interfaces/msg/PixelCoordinates.msg
+// generated code does not contain a copyright notice
+
+
+module assign1_interfaces {
+  module msg {
+    struct PixelCoordinates {
+      uint8 x;
+
+      uint8 y;
+    };
+  };
+};

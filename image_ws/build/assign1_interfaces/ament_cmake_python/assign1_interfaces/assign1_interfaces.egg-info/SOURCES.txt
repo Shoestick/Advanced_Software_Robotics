@@ -1,0 +1,8 @@
+setup.py
+assign1_interfaces/__init__.py
+assign1_interfaces.egg-info/PKG-INFO
+assign1_interfaces.egg-info/SOURCES.txt
+assign1_interfaces.egg-info/dependency_links.txt
+assign1_interfaces.egg-info/top_level.txt
+assign1_interfaces/msg/__init__.py
+assign1_interfaces/msg/_pixel_coordinates.py
