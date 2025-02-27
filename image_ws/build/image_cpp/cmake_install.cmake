@@ -43,27 +43,27 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/brightnessEx" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/brightnessEx")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/detector" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/detector")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/brightnessEx"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/detector"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/image_cpp" TYPE EXECUTABLE FILES "/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/brightnessEx")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/brightnessEx" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/brightnessEx")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/image_cpp" TYPE EXECUTABLE FILES "/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/detector")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/detector" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/detector")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/brightnessEx"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/detector"
          OLD_RPATH "/opt/ros/jazzy/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/brightnessEx")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/image_cpp/detector")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/CMakeFiles/brightnessEx.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/oisin/ros2_ws/assign1/image_ws/build/image_cpp/CMakeFiles/detector.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

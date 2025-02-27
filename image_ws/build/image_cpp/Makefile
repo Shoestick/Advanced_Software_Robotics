@@ -198,17 +198,17 @@ image_cpp_uninstall/fast:
 .PHONY : image_cpp_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named brightnessEx
+# Target rules for targets named detector
 
 # Build rule for target.
-brightnessEx: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 brightnessEx
-.PHONY : brightnessEx
+detector: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 detector
+.PHONY : detector
 
 # fast build rule for target.
-brightnessEx/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightnessEx.dir/build.make CMakeFiles/brightnessEx.dir/build
-.PHONY : brightnessEx/fast
+detector/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detector.dir/build.make CMakeFiles/detector.dir/build
+.PHONY : detector/fast
 
 #=============================================================================
 # Target rules for targets named obj_pos
@@ -223,29 +223,29 @@ obj_pos/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/obj_pos.dir/build.make CMakeFiles/obj_pos.dir/build
 .PHONY : obj_pos/fast
 
-src/brightness.o: src/brightness.cpp.o
-.PHONY : src/brightness.o
+src/light_detector.o: src/light_detector.cpp.o
+.PHONY : src/light_detector.o
 
 # target to build an object file
-src/brightness.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightnessEx.dir/build.make CMakeFiles/brightnessEx.dir/src/brightness.cpp.o
-.PHONY : src/brightness.cpp.o
+src/light_detector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detector.dir/build.make CMakeFiles/detector.dir/src/light_detector.cpp.o
+.PHONY : src/light_detector.cpp.o
 
-src/brightness.i: src/brightness.cpp.i
-.PHONY : src/brightness.i
+src/light_detector.i: src/light_detector.cpp.i
+.PHONY : src/light_detector.i
 
 # target to preprocess a source file
-src/brightness.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightnessEx.dir/build.make CMakeFiles/brightnessEx.dir/src/brightness.cpp.i
-.PHONY : src/brightness.cpp.i
+src/light_detector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detector.dir/build.make CMakeFiles/detector.dir/src/light_detector.cpp.i
+.PHONY : src/light_detector.cpp.i
 
-src/brightness.s: src/brightness.cpp.s
-.PHONY : src/brightness.s
+src/light_detector.s: src/light_detector.cpp.s
+.PHONY : src/light_detector.s
 
 # target to generate assembly for a file
-src/brightness.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightnessEx.dir/build.make CMakeFiles/brightnessEx.dir/src/brightness.cpp.s
-.PHONY : src/brightness.cpp.s
+src/light_detector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detector.dir/build.make CMakeFiles/detector.dir/src/light_detector.cpp.s
+.PHONY : src/light_detector.cpp.s
 
 src/obj_pos.o: src/obj_pos.cpp.o
 .PHONY : src/obj_pos.o
@@ -286,11 +286,11 @@ help:
 	@echo "... test"
 	@echo "... image_cpp_uninstall"
 	@echo "... uninstall"
-	@echo "... brightnessEx"
+	@echo "... detector"
 	@echo "... obj_pos"
-	@echo "... src/brightness.o"
-	@echo "... src/brightness.i"
-	@echo "... src/brightness.s"
+	@echo "... src/light_detector.o"
+	@echo "... src/light_detector.i"
+	@echo "... src/light_detector.s"
 	@echo "... src/obj_pos.o"
 	@echo "... src/obj_pos.i"
 	@echo "... src/obj_pos.s"

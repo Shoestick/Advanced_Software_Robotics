@@ -17,15 +17,15 @@ find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(assign1_interfaces REQUIRED)
 
-add_executable(brightnessEx src/brightness.cpp)
-ament_target_dependencies(brightnessEx rclcpp sensor_msgs example_interfaces)
+add_executable(detector src/light_detector.cpp)
+ament_target_dependencies(detector rclcpp sensor_msgs example_interfaces)
 
 add_executable(obj_pos src/obj_pos.cpp)
 target_link_libraries(obj_pos ${OpenCV_LIBS})
 ament_target_dependencies(obj_pos rclcpp cv_bridge OpenCV assign1_interfaces)
 
 install(TARGETS 
-  brightnessEx
+  detector
   obj_pos
   DESTINATION lib/${PROJECT_NAME}
 )
