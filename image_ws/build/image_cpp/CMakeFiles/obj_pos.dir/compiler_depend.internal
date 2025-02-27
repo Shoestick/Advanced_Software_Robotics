@@ -3,6 +3,12 @@
 
 CMakeFiles/obj_pos.dir/src/obj_pos.cpp.o
  /home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/obj_pos.cpp
+ /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__builder.hpp
+ /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__struct.hpp
+ /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__traits.hpp
+ /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/detail/pixel_coordinates__type_support.hpp
+ /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/pixel_coordinates.hpp
+ /home/oisin/ros2_ws/assign1/image_ws/install/assign1_interfaces/include/assign1_interfaces/assign1_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp

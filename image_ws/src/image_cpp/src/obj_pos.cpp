@@ -23,8 +23,8 @@ public:
         std::bind(&ObjectPosNode::callbackImage, this, std::placeholders::_1));
 
         // create a topic called cog that publishes publishCog every half second
-        //publisher_ = this->create_publisher<assign1_interfaces::msg::PixelCoordinates>("cog", 10);
-        //timer_ = this->create_wall_timer(1s, std::bind(&ObjectPosNode::publishCog, this));
+        publisher_ = this->create_publisher<assign1_interfaces::msg::PixelCoordinates>("cog", 10);
+        timer_ = this->create_wall_timer(1s, std::bind(&ObjectPosNode::publishCog, this));
 
         // text to terminal when starting
         RCLCPP_INFO(this->get_logger(), "Object position node has begun");
@@ -34,7 +34,10 @@ private:
 
     void publishCog()
     {
-
+        auto msg = assign1_interfaces::msg::PixelCoordinates();
+        msg.x = p_.x;
+        msg.y = p_.y;
+        publisher_->publish(msg);
     }
 
     void callbackImage(const sensor_msgs::msg::Image::SharedPtr msg)
@@ -55,8 +58,6 @@ private:
         // find moments of the image
         cv::Moments m = cv::moments(threshed, true);
         p_ = cv::Point(m.m10/m.m00, m.m01/m.m00);
-
-        RCLCPP_INFO(this->get_logger(), "Centroid of object: (%d, %d)", p_.x, p_.y);
         
         // show the image with a point mark at the centroid
         circle(src, p_, 5, cv::Scalar(128,0,0), -1);
