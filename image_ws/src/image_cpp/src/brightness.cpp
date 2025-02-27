@@ -2,8 +2,8 @@
 #include "sensor_msgs/msg/image.hpp"
 #include "example_interfaces/msg/string.hpp"
 
-using namespace std::chrono_literals;
-     
+// equal to the threshold means dark
+
 class Brightness : public rclcpp::Node 
 {
 public:
@@ -19,30 +19,20 @@ public:
         
         // create a publisher called /bright, publish publishBright every half second
         publisher_ = this->create_publisher<example_interfaces::msg::String>("bright", 10);
-        timer_ = this->create_wall_timer(0.5s, std::bind(&Brightness::publishBright, this));
         
         // text to terminal when starting
         RCLCPP_INFO(this->get_logger(), "Brightness node has begun");
     }
  
 private:
-    // publish whether or not average brightness of image is above or below threshold
-    void publishBright()
-    {
-        std::string statement {"it is light"};
-        if(bright_ == 0) statement = "it is dark";
-
-        auto msg = example_interfaces::msg::String();
-        msg.data = statement;
-        publisher_->publish(msg);
-    }
-
     // 
     void callbackImage(const sensor_msgs::msg::Image::SharedPtr msg)
     {
+        // load in variables to get the size of the msg.data 
         std::uint32_t rows = msg->height;
         std::uint32_t step = msg->step;
 
+        // add all pixel values and divide by num pixels to get average
         int total {0};
         for(std::size_t i{0}; i < rows * step; i++)
         {
@@ -52,18 +42,33 @@ private:
         // so I'm judging this static cast as okay
         int avg { total / static_cast<int>(rows * step) };
 
+        // get threshold parameter
         threshold_ = this->get_parameter("threshold").as_int();
-        if(avg > threshold_) bright_ = 1;
-        else bright_ = 0;
 
-        RCLCPP_INFO(this->get_logger(), "avg is currently '%d'", avg);
+        // bool for whether or not brightness of image is above threshold
+        bool bright { 0 };
+        if(avg > threshold_) bright = 1;
+
+        // if the avg changes to being above/below threshold, publish to topic
+        if(bright != bright_old_)
+        {
+            bright_old_ = bright;
+
+            std::string statement {"it is dark"};
+            if(bright == 1) statement = "it is light";
+
+            auto msg = example_interfaces::msg::String();
+            msg.data = statement;
+            publisher_->publish(msg);
+
+            RCLCPP_INFO(this->get_logger(), "avg is currently '%d'", avg);
+        }
     }
 
+    bool bright_old_ {0};
     int threshold_ {0};
-    bool bright_ {0};
     rclcpp::Publisher<example_interfaces::msg::String>::SharedPtr publisher_;
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr subscriber_;
-    rclcpp::TimerBase::SharedPtr timer_;
 };
  
 int main(int argc, char **argv)
