@@ -1,0 +1,42 @@
+[0.012s] Invoking command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/oisin/ros2_ws/assign1_ws/src/light_tracking -DCMAKE_INSTALL_PREFIX=/home/oisin/ros2_ws/assign1_ws/install/light_tracking
+[0.117s] -- The C compiler identification is GNU 13.3.0
+[0.243s] -- The CXX compiler identification is GNU 13.3.0
+[0.280s] -- Detecting C compiler ABI info
+[0.473s] -- Detecting C compiler ABI info - done
+[0.491s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.492s] -- Detecting C compile features
+[0.492s] -- Detecting C compile features - done
+[0.510s] -- Detecting CXX compiler ABI info
+[0.733s] -- Detecting CXX compiler ABI info - done
+[0.749s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.750s] -- Detecting CXX compile features
+[0.751s] -- Detecting CXX compile features - done
+[0.766s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.090s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.336s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.572s] -- Added test 'lint_cmake' to check CMake code style
+[1.576s] -- Added test 'xmllint' to check XML markup files
+[1.579s] -- Configuring done (1.6s)
+[1.586s] -- Generating done (0.0s)
+[1.590s] -- Build files have been written to: /home/oisin/ros2_ws/assign1_ws/build/light_tracking
+[1.600s] Invoked command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/oisin/ros2_ws/assign1_ws/src/light_tracking -DCMAKE_INSTALL_PREFIX=/home/oisin/ros2_ws/assign1_ws/install/light_tracking
+[1.602s] Invoking command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oisin/ros2_ws/assign1_ws/build/light_tracking -- -j16 -l16
+[1.692s] Invoked command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oisin/ros2_ws/assign1_ws/build/light_tracking -- -j16 -l16
+[1.715s] Invoking command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/oisin/ros2_ws/assign1_ws/build/light_tracking
+[1.730s] -- Install configuration: ""
+[1.730s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/package_run_dependencies/light_tracking
+[1.731s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/parent_prefix_path/light_tracking
+[1.732s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/ament_prefix_path.sh
+[1.732s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/ament_prefix_path.dsv
+[1.732s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/path.sh
+[1.732s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/path.dsv
+[1.733s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.bash
+[1.733s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.sh
+[1.734s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.zsh
+[1.734s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.dsv
+[1.734s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.dsv
+[1.734s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/packages/light_tracking
+[1.735s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/cmake/light_trackingConfig.cmake
+[1.735s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/cmake/light_trackingConfig-version.cmake
+[1.735s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.xml
+[1.740s] Invoked command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/oisin/ros2_ws/assign1_ws/build/light_tracking

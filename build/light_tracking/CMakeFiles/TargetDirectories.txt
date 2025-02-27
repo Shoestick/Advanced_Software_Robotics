@@ -1,0 +1,11 @@
+/home/oisin/ros2_ws/assign1_ws/build/light_tracking/CMakeFiles/uninstall.dir
+/home/oisin/ros2_ws/assign1_ws/build/light_tracking/CMakeFiles/light_tracking_uninstall.dir
+/home/oisin/ros2_ws/assign1_ws/build/light_tracking/CMakeFiles/detector.dir
+/home/oisin/ros2_ws/assign1_ws/build/light_tracking/CMakeFiles/position.dir
+/home/oisin/ros2_ws/assign1_ws/build/light_tracking/CMakeFiles/test.dir
+/home/oisin/ros2_ws/assign1_ws/build/light_tracking/CMakeFiles/edit_cache.dir
+/home/oisin/ros2_ws/assign1_ws/build/light_tracking/CMakeFiles/rebuild_cache.dir
+/home/oisin/ros2_ws/assign1_ws/build/light_tracking/CMakeFiles/list_install_components.dir
+/home/oisin/ros2_ws/assign1_ws/build/light_tracking/CMakeFiles/install.dir
+/home/oisin/ros2_ws/assign1_ws/build/light_tracking/CMakeFiles/install/local.dir
+/home/oisin/ros2_ws/assign1_ws/build/light_tracking/CMakeFiles/install/strip.dir

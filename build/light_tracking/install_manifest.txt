@@ -1,0 +1,17 @@
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/detector
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/position
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/package_run_dependencies/light_tracking
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/parent_prefix_path/light_tracking
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/ament_prefix_path.sh
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/ament_prefix_path.dsv
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/path.sh
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/path.dsv
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.bash
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.sh
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.zsh
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.dsv
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.dsv
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/packages/light_tracking
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/cmake/light_trackingConfig.cmake
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/cmake/light_trackingConfig-version.cmake
+/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.xml

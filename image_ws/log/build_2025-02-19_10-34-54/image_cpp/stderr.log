@@ -1,7 +1,0 @@
-[01m[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/brightness.cpp:[m[K In member function ‘[01m[Kvoid Brightness::[01;32m[KcallbackImage[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/brightness.cpp:37:26:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
-   37 |         char* condition {[01;35m[K"above"[m[K};
-      |                          [01;35m[K^~~~~~~[m[K
-[01m[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/brightness.cpp:38:38:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
-   38 |         if(bright_ == 0) condition = [01;35m[K"below"[m[K;
-      |                                      [01;35m[K^~~~~~~[m[K

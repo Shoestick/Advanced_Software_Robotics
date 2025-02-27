@@ -1,7 +1,0 @@
-{
-  "package_name": "assign1_interfaces",
-  "output_dir": "/home/oisin/ros2_ws/assign1/image_ws/build/assign1_interfaces/rosidl_generator_type_description/assign1_interfaces",
-  "idl_tuples": [
-    "/home/oisin/ros2_ws/assign1/image_ws/build/assign1_interfaces/rosidl_adapter/assign1_interfaces:msg/PixelCoordinates.idl"
-  ]
-}

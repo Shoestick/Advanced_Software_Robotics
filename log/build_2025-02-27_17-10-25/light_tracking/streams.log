@@ -1,0 +1,49 @@
+[0.018s] Invoking command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking': CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/home/oisin/ros2_ws/assign1_ws/install/light_tracking:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oisin/ros2_ws/assign1_ws/build/light_tracking -- -j16 -l16
+[0.072s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.553s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.644s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.675s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.712s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.753s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.928s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.935s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.123s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.167s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.218s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.388s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.526s] -- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)
+[1.654s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[1.683s] -- Found OpenCV: /usr (found version "4.6.0") 
+[1.684s] -- Found assign1_interfaces: 0.0.0 (/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/share/assign1_interfaces/cmake)
+[1.901s] -- Configuring done (1.8s)
+[1.950s] -- Generating done (0.0s)
+[1.962s] -- Build files have been written to: /home/oisin/ros2_ws/assign1_ws/build/light_tracking
+[2.047s] [ 50%] [32mBuilding CXX object CMakeFiles/position.dir/src/object_position.cpp.o[0m
+[2.047s] [ 50%] [32mBuilding CXX object CMakeFiles/detector.dir/src/light_detector.cpp.o[0m
+[11.526s] [ 75%] [32m[1mLinking CXX executable detector[0m
+[11.764s] [ 75%] Built target detector
+[13.236s] [100%] [32m[1mLinking CXX executable position[0m
+[13.855s] [100%] Built target position
+[13.866s] Invoked command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking' returned '0': CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/home/oisin/ros2_ws/assign1_ws/install/light_tracking:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oisin/ros2_ws/assign1_ws/build/light_tracking -- -j16 -l16
+[13.867s] Invoking command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking': CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/home/oisin/ros2_ws/assign1_ws/install/light_tracking:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/oisin/ros2_ws/assign1_ws/build/light_tracking
+[13.873s] -- Install configuration: ""
+[13.873s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/detector
+[13.878s] -- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/detector" to ""
+[13.878s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/position
+[13.883s] -- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/position" to ""
+[13.883s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/package_run_dependencies/light_tracking
+[13.883s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/parent_prefix_path/light_tracking
+[13.883s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/ament_prefix_path.sh
+[13.883s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/ament_prefix_path.dsv
+[13.883s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/path.sh
+[13.883s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/path.dsv
+[13.883s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.bash
+[13.884s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.sh
+[13.884s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.zsh
+[13.884s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.dsv
+[13.884s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.dsv
+[13.884s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/packages/light_tracking
+[13.884s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/cmake/light_trackingConfig.cmake
+[13.884s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/cmake/light_trackingConfig-version.cmake
+[13.884s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.xml
+[13.885s] Invoked command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking' returned '0': CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/home/oisin/ros2_ws/assign1_ws/install/light_tracking:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/oisin/ros2_ws/assign1_ws/build/light_tracking

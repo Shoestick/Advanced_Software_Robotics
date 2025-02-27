@@ -1,9 +1,0 @@
-[ 75%] [32mBuilding CXX object CMakeFiles/obj_pos.dir/src/obj_pos.cpp.o[0m
-[ 75%] Built target brightnessEx
-[01m[K/home/oisin/ros2_ws/assign1/image_ws/src/image_cpp/src/obj_pos.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kassign1_interfaces/msg/pixel_coordinates.hpp: No such file or directory
-    6 | #include [01;31m[K"assign1_interfaces/msg/pixel_coordinates.hpp"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/obj_pos.dir/build.make:76: CMakeFiles/obj_pos.dir/src/obj_pos.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/obj_pos.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
