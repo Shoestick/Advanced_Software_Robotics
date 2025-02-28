@@ -1,0 +1,13 @@
+<launch>
+    <!--This launch code assumes the user has a livestream of the camera set according to the instrucions of the tutorial for the assignment.-->
+    <!--Robot controller -->
+    <node pkg="rel_controller" exec="controller" name="controller" output="screen"/>
+
+    <!--Bright Object detector -->
+    <node pkg="light_tracking" exec="position" name="position" output="screen"/>
+
+    <!--RELbot simulator-->
+    <node pkg="relbot_simulator" exec="relbot_simulator" name="relbot_simulator" output="screen">
+        <param name="use_twist_cmd" type="bool" value="true"/>
+    </node>
+</launch>

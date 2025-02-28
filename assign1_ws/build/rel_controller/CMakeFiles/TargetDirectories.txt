@@ -1,0 +1,10 @@
+/home/oisin/ros2_ws/assign1_ws/build/rel_controller/CMakeFiles/uninstall.dir
+/home/oisin/ros2_ws/assign1_ws/build/rel_controller/CMakeFiles/rel_controller_uninstall.dir
+/home/oisin/ros2_ws/assign1_ws/build/rel_controller/CMakeFiles/controller.dir
+/home/oisin/ros2_ws/assign1_ws/build/rel_controller/CMakeFiles/test.dir
+/home/oisin/ros2_ws/assign1_ws/build/rel_controller/CMakeFiles/edit_cache.dir
+/home/oisin/ros2_ws/assign1_ws/build/rel_controller/CMakeFiles/rebuild_cache.dir
+/home/oisin/ros2_ws/assign1_ws/build/rel_controller/CMakeFiles/list_install_components.dir
+/home/oisin/ros2_ws/assign1_ws/build/rel_controller/CMakeFiles/install.dir
+/home/oisin/ros2_ws/assign1_ws/build/rel_controller/CMakeFiles/install/local.dir
+/home/oisin/ros2_ws/assign1_ws/build/rel_controller/CMakeFiles/install/strip.dir

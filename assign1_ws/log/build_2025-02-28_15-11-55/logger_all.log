@@ -1,0 +1,174 @@
+[0.154s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'light_tracking']
+[0.154s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['light_tracking'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7dcd2ee673e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7dcd2ef930b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7dcd2ef930b0>>, mixin_verb=('build',))
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.213s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.213s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/oisin/ros2_ws/assign1_ws'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/assign1_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/assign1_interfaces) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/assign1_interfaces) by extension 'ignore_ament_install'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/assign1_interfaces) by extensions ['colcon_pkg']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/assign1_interfaces) by extension 'colcon_pkg'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/assign1_interfaces) by extensions ['colcon_meta']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/assign1_interfaces) by extension 'colcon_meta'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/assign1_interfaces) by extensions ['ros']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/assign1_interfaces) by extension 'ros'
+[0.255s] DEBUG:colcon.colcon_core.package_identification:Package 'src/assign1_interfaces' with type 'ros.ament_cmake' and name 'assign1_interfaces'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_tracking) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_tracking) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_tracking) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_tracking) by extensions ['colcon_pkg']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_tracking) by extension 'colcon_pkg'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_tracking) by extensions ['colcon_meta']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_tracking) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_tracking) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_tracking) by extension 'ros'
+[0.256s] DEBUG:colcon.colcon_core.package_identification:Package 'src/light_tracking' with type 'ros.ament_cmake' and name 'light_tracking'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/rel_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/rel_controller) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/rel_controller) by extension 'ignore_ament_install'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/rel_controller) by extensions ['colcon_pkg']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/rel_controller) by extension 'colcon_pkg'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/rel_controller) by extensions ['colcon_meta']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/rel_controller) by extension 'colcon_meta'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/rel_controller) by extensions ['ros']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/rel_controller) by extension 'ros'
+[0.258s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rel_controller' with type 'ros.ament_cmake' and name 'rel_controller'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'colcon_pkg'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'colcon_meta'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/relbot_simulator) by extension 'ros'
+[0.259s] DEBUG:colcon.colcon_core.package_identification:Package 'src/relbot_simulator' with type 'ros.ament_cmake' and name 'relbot_simulator'
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.283s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'assign1_interfaces' in 'src/assign1_interfaces'
+[0.283s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'relbot_simulator' in 'src/relbot_simulator'
+[0.283s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'rel_controller' in 'src/rel_controller'
+[0.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.286s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/oisin/ros2_ws/assign1_ws/install
+[0.289s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 316 installed packages in /opt/ros/jazzy
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'light_tracking' build argument 'cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'light_tracking' build argument 'cmake_target' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'light_tracking' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'light_tracking' build argument 'cmake_clean_cache' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'light_tracking' build argument 'cmake_clean_first' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'light_tracking' build argument 'cmake_force_configure' from command line to 'False'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'light_tracking' build argument 'ament_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'light_tracking' build argument 'catkin_cmake_args' from command line to 'None'
+[0.346s] Level 5:colcon.colcon_core.verb:set package 'light_tracking' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.346s] DEBUG:colcon.colcon_core.verb:Building package 'light_tracking' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/oisin/ros2_ws/assign1_ws/build/light_tracking', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/oisin/ros2_ws/assign1_ws/install/light_tracking', 'merge_install': False, 'path': '/home/oisin/ros2_ws/assign1_ws/src/light_tracking', 'symlink_install': False, 'test_result_base': None}
+[0.346s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.348s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.348s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/oisin/ros2_ws/assign1_ws/src/light_tracking' with build type 'ament_cmake'
+[0.348s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/oisin/ros2_ws/assign1_ws/src/light_tracking'
+[0.353s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.353s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.353s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking': CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/home/oisin/ros2_ws/assign1_ws/install/relbot_simulator:/home/oisin/ros2_ws/assign1_ws/install/rel_controller:/home/oisin/ros2_ws/assign1_ws/install/light_tracking:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oisin/ros2_ws/assign1_ws/build/light_tracking -- -j16 -l16
+[9.001s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking' returned '0': CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/home/oisin/ros2_ws/assign1_ws/install/relbot_simulator:/home/oisin/ros2_ws/assign1_ws/install/rel_controller:/home/oisin/ros2_ws/assign1_ws/install/light_tracking:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oisin/ros2_ws/assign1_ws/build/light_tracking -- -j16 -l16
+[9.013s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking': CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/home/oisin/ros2_ws/assign1_ws/install/relbot_simulator:/home/oisin/ros2_ws/assign1_ws/install/rel_controller:/home/oisin/ros2_ws/assign1_ws/install/light_tracking:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/oisin/ros2_ws/assign1_ws/build/light_tracking
+[9.029s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(light_tracking)
+[9.029s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking' returned '0': CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/home/oisin/ros2_ws/assign1_ws/install/relbot_simulator:/home/oisin/ros2_ws/assign1_ws/install/rel_controller:/home/oisin/ros2_ws/assign1_ws/install/light_tracking:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/oisin/ros2_ws/assign1_ws/build/light_tracking
+[9.031s] Level 1:colcon.colcon_core.environment:checking '/home/oisin/ros2_ws/assign1_ws/install/light_tracking' for CMake module files
+[9.031s] Level 1:colcon.colcon_core.environment:checking '/home/oisin/ros2_ws/assign1_ws/install/light_tracking' for CMake config files
+[9.032s] Level 1:colcon.colcon_core.shell:create_environment_hook('light_tracking', 'cmake_prefix_path')
+[9.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/hook/cmake_prefix_path.ps1'
+[9.032s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/hook/cmake_prefix_path.dsv'
+[9.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/hook/cmake_prefix_path.sh'
+[9.033s] Level 1:colcon.colcon_core.environment:checking '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib'
+[9.033s] Level 1:colcon.colcon_core.environment:checking '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/bin'
+[9.033s] Level 1:colcon.colcon_core.environment:checking '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/pkgconfig/light_tracking.pc'
+[9.033s] Level 1:colcon.colcon_core.environment:checking '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/python3.12/site-packages'
+[9.033s] Level 1:colcon.colcon_core.environment:checking '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/bin'
+[9.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.ps1'
+[9.034s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.dsv'
+[9.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.sh'
+[9.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.bash'
+[9.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.zsh'
+[9.035s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/colcon-core/packages/light_tracking)
+[9.036s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(light_tracking)
+[9.036s] Level 1:colcon.colcon_core.environment:checking '/home/oisin/ros2_ws/assign1_ws/install/light_tracking' for CMake module files
+[9.036s] Level 1:colcon.colcon_core.environment:checking '/home/oisin/ros2_ws/assign1_ws/install/light_tracking' for CMake config files
+[9.036s] Level 1:colcon.colcon_core.shell:create_environment_hook('light_tracking', 'cmake_prefix_path')
+[9.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/hook/cmake_prefix_path.ps1'
+[9.037s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/hook/cmake_prefix_path.dsv'
+[9.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/hook/cmake_prefix_path.sh'
+[9.037s] Level 1:colcon.colcon_core.environment:checking '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib'
+[9.037s] Level 1:colcon.colcon_core.environment:checking '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/bin'
+[9.037s] Level 1:colcon.colcon_core.environment:checking '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/pkgconfig/light_tracking.pc'
+[9.037s] Level 1:colcon.colcon_core.environment:checking '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/python3.12/site-packages'
+[9.038s] Level 1:colcon.colcon_core.environment:checking '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/bin'
+[9.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.ps1'
+[9.038s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.dsv'
+[9.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.sh'
+[9.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.bash'
+[9.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.zsh'
+[9.039s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/colcon-core/packages/light_tracking)
+[9.039s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.039s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.040s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.040s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.046s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.046s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.046s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.058s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.059s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/oisin/ros2_ws/assign1_ws/install/local_setup.ps1'
+[9.059s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/oisin/ros2_ws/assign1_ws/install/_local_setup_util_ps1.py'
+[9.061s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/oisin/ros2_ws/assign1_ws/install/setup.ps1'
+[9.062s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/oisin/ros2_ws/assign1_ws/install/local_setup.sh'
+[9.062s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/oisin/ros2_ws/assign1_ws/install/_local_setup_util_sh.py'
+[9.062s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/oisin/ros2_ws/assign1_ws/install/setup.sh'
+[9.063s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/oisin/ros2_ws/assign1_ws/install/local_setup.bash'
+[9.063s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/oisin/ros2_ws/assign1_ws/install/setup.bash'
+[9.064s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/oisin/ros2_ws/assign1_ws/install/local_setup.zsh'
+[9.064s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/oisin/ros2_ws/assign1_ws/install/setup.zsh'

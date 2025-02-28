@@ -1,0 +1,10 @@
+/home/oisin/ros2_ws/assign1_ws/build/relbot_simulator/CMakeFiles/uninstall.dir
+/home/oisin/ros2_ws/assign1_ws/build/relbot_simulator/CMakeFiles/relbot_simulator_uninstall.dir
+/home/oisin/ros2_ws/assign1_ws/build/relbot_simulator/CMakeFiles/relbot_simulator.dir
+/home/oisin/ros2_ws/assign1_ws/build/relbot_simulator/CMakeFiles/test.dir
+/home/oisin/ros2_ws/assign1_ws/build/relbot_simulator/CMakeFiles/edit_cache.dir
+/home/oisin/ros2_ws/assign1_ws/build/relbot_simulator/CMakeFiles/rebuild_cache.dir
+/home/oisin/ros2_ws/assign1_ws/build/relbot_simulator/CMakeFiles/list_install_components.dir
+/home/oisin/ros2_ws/assign1_ws/build/relbot_simulator/CMakeFiles/install.dir
+/home/oisin/ros2_ws/assign1_ws/build/relbot_simulator/CMakeFiles/install/local.dir
+/home/oisin/ros2_ws/assign1_ws/build/relbot_simulator/CMakeFiles/install/strip.dir

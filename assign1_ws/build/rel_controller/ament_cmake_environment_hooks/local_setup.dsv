@@ -1,0 +1,2 @@
+source;share/rel_controller/environment/ament_prefix_path.sh
+source;share/rel_controller/environment/path.sh

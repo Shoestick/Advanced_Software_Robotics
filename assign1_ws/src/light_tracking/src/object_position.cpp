@@ -6,29 +6,42 @@
 #include <opencv2/core.hpp>
 
 using namespace std::chrono_literals;
-     
+
+/**
+ * @brief 
+ * 
+ * Subscribes to topic /image, converts incoming image to greyscale before 
+ * binary thresholding the image over some threshold. Calculates centroid of
+ * binary image object pixels and publishes them to /cog_object using custom
+ * interface.
+ * 
+ * @note If no object pixels found, publishes (x=-1, y=-1).
+ */
 class ObjectPositionNode : public rclcpp::Node
 {
 public:
     ObjectPositionNode() : Node("object_position"), p_(cv::Point(-1, -1))
     {
-        // declare parameter controlling threshold value
+        // declare parameter controlling threshold value and publish speed
         this->declare_parameter("threshold", 242);
         this->declare_parameter("timer_period", 1.0);
 
-        // subscribe to /image topic and call callbackObjPos function when receiving data
+        // subscribe to /image topic and call callbackObjPos function when 
+        // receiving data
         subscriber_ = this->create_subscription<sensor_msgs::msg::Image>(
         "image", 10,
-        std::bind(&ObjectPositionNode::callbackObjPos, this, std::placeholders::_1));
+        std::bind(&ObjectPositionNode::callbackObjPos, this, 
+                                                        std::placeholders::_1));
 
         
         // create a topic called cog that publishes publishCog at timed interval
-        publisher_ = this->create_publisher<assign1_interfaces::msg::PixelCoordinates>("cog_object", 10);
+        publisher_ = this->create_publisher<assign1_interfaces::msg
+                                        ::PixelCoordinates>("cog_object", 10);
         double timer_period { this->get_parameter("timer_period").as_double() };
         timer_ = this->create_wall_timer(std::chrono::duration<double>(timer_period), 
             std::bind(&ObjectPositionNode::publishCog, this));
 
-        // text to terminal when starting
+        // log node starting
         RCLCPP_INFO(this->get_logger(), "Object position node has begun");
     }
 
@@ -42,21 +55,39 @@ private:
         publisher_->publish(msg);
     }
 
-    // applies a binary threshold to the image, then calulates centre of
-    // gravity of remaining object
+    /**
+     * @brief Callback function that calculates CoG of object in incoming image 
+     * messages.
+     * 
+     * Takes in an image from /image. Applies a binary threshold to the image, 
+     * then calulates centre of gravity of remaining object. Centre of gravity 
+     * set to -1 -1 if no object pixels detected.
+     * 
+     * @param msg Image message type received from /image.
+     * @note Robust against different 8bit image encodings.
+     */
     void callbackObjPos(const sensor_msgs::msg::Image::SharedPtr msg)
     {
-        // will need to change the "bgr8" to manage other formats of image
-        cv::Mat src = cv_bridge::toCvCopy(msg, "bgr8")->image;
-
+        // convert /image msg to cv::Mat
+        cv::Mat src = cv_bridge::toCvCopy(msg, msg->encoding)->image;
         cv::Mat grey {};
-        cvtColor(src, grey, CV_BGR2GRAY);
+
+        if (msg->encoding == sensor_msgs::image_encodings::MONO8) {
+            grey = src.clone();
+        } else if (msg->encoding == sensor_msgs::image_encodings::BGR8) {
+            cvtColor(src, grey, cv::COLOR_BGR2GRAY);
+        } else if (msg->encoding == sensor_msgs::image_encodings::RGB8) {
+            cvtColor(src, grey, cv::COLOR_RGB2GRAY);
+        } else {
+            RCLCPP_WARN(this->get_logger(), "Unsupported image encoding: %s", 
+                                                        msg->encoding.c_str());
+            return;
+        }
 
         cv::Mat threshed {};
-
-        int const threshold_type {0};
         threshold_value_ = this->get_parameter("threshold").as_int();
-
+        int const threshold_type {0}; // binary threshold specifier
+        
         threshold( grey, threshed, threshold_value_, 255, threshold_type );
 
         // check if object exists before giving position value

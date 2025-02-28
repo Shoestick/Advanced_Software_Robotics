@@ -4,29 +4,52 @@
 
 // equal to the threshold means dark
 
+/**
+ * @brief Publishes whether or not input image is light or dark on average.
+ * 
+ * Subscribes to topic /image, then finds the average pixel value of the given
+ * image. The average is compared to a threshold and depending on if it is found
+ * above or below it will be considered light or dark. If state changes, it is
+ * published to topic /bright.
+ * 
+ * @note Averages equal to the threshold are considered dark.
+ * @warning Image inputs larger than ~32k * ~32k will cause an integer error.
+ * @warning Image message with empty or 0 values in members will cause undefined
+ * behaviour.
+ */
 class LightDetector : public rclcpp::Node 
 {
 public:
-LightDetector() : Node("light_detector") 
+LightDetector() : Node("light_detector"), bright_old_(0)
     {
-        // declare parameter to later get
-        this->declare_parameter("threshold", 130);
+        // declare parameter for threshold value
+        this->declare_parameter("threshold", 242);
 
-        // begin subscriber to /image, call callbackLuminance when recieving something from the topic
+        // begin subscriber to /image, call callbackLuminance when recieving 
+        // something from the topic
         subscriber_ = this->create_subscription<sensor_msgs::msg::Image>(
         "image", 10,
         std::bind(&LightDetector::callbackLuminance, this, std::placeholders::_1));
         
-        // create a publisher called /bright, publish publishBright every half second
-        publisher_ = this->create_publisher<example_interfaces::msg::String>("bright", 10);
+        // create a publisher called /bright, publish when state of luminance 
+        // changes
+        publisher_ = this->create_publisher<example_interfaces::msg
+                                                        ::String>("bright", 10);
         
-        // text to terminal when starting
+        // log node starting
         RCLCPP_INFO(this->get_logger(), "Light Detector node has begun");
     }
  
 private:
-    // finds the average pixel value of image and publishes whether or not
-    // the value gets above a certain threshold, indicating light or dark
+    /**
+     * @brief Callback function to check luminance of incoming image messages.
+     * 
+     * Calculates the size of the image, then adds up all the incoming values
+     * before dividing to get the average. Compares average to threshold, if 
+     * stat of luminance has changed, publishes it to /bright.
+     * 
+     * @param msg Image message type received from /image.
+     */
     void callbackLuminance(const sensor_msgs::msg::Image::SharedPtr msg)
     {
         // load in variables to get the size of the msg.data 
@@ -39,24 +62,22 @@ private:
         {
             total += msg->data[i];
         }
-        // I find it unlikely the camera will be more than ~32k * ~32k in pixel size
-        // so I'm judging this static cast as okay
+
         int avg { total / static_cast<int>(rows * step) };
 
-        // get threshold parameter
+        // get threshold parameter, make sure it's within range
         threshold_value_ = this->get_parameter("threshold").as_int();
+        threshold_value_ = std::clamp(threshold_value_, 0, 255);
 
         // bool for whether or not brightness of image is above threshold
-        bool bright { 0 };
-        if(avg > threshold_value_) bright = 1;
+        bool bright { avg > threshold_value_ };
 
-        // if the avg changes to being above/below threshold, publish to topic
+        // publish to topic if status changes
         if(bright != bright_old_)
         {
             bright_old_ = bright;
 
-            std::string statement {"it is dark"};
-            if(bright == 1) statement = "it is light";
+            std::string statement = bright ? "it is light" : "it is dark";
 
             auto msg = example_interfaces::msg::String();
             msg.data = statement;
@@ -66,8 +87,8 @@ private:
         }
     }
 
-    bool bright_old_ {0};
-    int threshold_value_ {0};
+    bool bright_old_ {};
+    int threshold_value_ {};
     rclcpp::Publisher<example_interfaces::msg::String>::SharedPtr publisher_;
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr subscriber_;
 };

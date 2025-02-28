@@ -1,0 +1,12 @@
+<launch>
+
+    <!--Robot controller -->
+    <node pkg="rel_controller" exec="controller" name="controller" >
+    <!--Bright Object detector -->
+    <node pkg="light_tracking" exec="position" name="position">
+
+    <!--RELbot simulator-->
+    <node pkg="relbot_simulator" exec="relbot_simulator" name="relbot_simulator">
+        <param name="use_twist_cmd" type="bool" value="true"/>
+    </node>
+</launch>
