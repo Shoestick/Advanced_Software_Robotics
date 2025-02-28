@@ -25,7 +25,8 @@ LightDetector() : Node("light_detector")
     }
  
 private:
-    // 
+    // finds the average pixel value of image and publishes whether or not
+    // the value gets above a certain threshold, indicating light or dark
     void callbackImage(const sensor_msgs::msg::Image::SharedPtr msg)
     {
         // load in variables to get the size of the msg.data 

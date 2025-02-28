@@ -68,15 +68,15 @@ class PixelCoordinates(metaclass=Metaclass_PixelCoordinates):
     ]
 
     _fields_and_field_types = {
-        'x': 'uint8',
-        'y': 'uint8',
+        'x': 'int16',
+        'y': 'int16',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -143,8 +143,8 @@ class PixelCoordinates(metaclass=Metaclass_PixelCoordinates):
             assert \
                 isinstance(value, int), \
                 "The 'x' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'x' field must be an unsigned integer in [0, 255]"
+            assert value >= -32768 and value < 32768, \
+                "The 'x' field must be an integer in [-32768, 32767]"
         self._x = value
 
     @builtins.property
@@ -158,6 +158,6 @@ class PixelCoordinates(metaclass=Metaclass_PixelCoordinates):
             assert \
                 isinstance(value, int), \
                 "The 'y' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'y' field must be an unsigned integer in [0, 255]"
+            assert value >= -32768 and value < 32768, \
+                "The 'y' field must be an integer in [-32768, 32767]"
         self._y = value

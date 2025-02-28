@@ -22,8 +22,8 @@ extern "C"
 /// Struct defined in msg/PixelCoordinates in the package assign1_interfaces.
 typedef struct assign1_interfaces__msg__PixelCoordinates
 {
-  uint8_t x;
-  uint8_t y;
+  int16_t x;
+  int16_t y;
 } assign1_interfaces__msg__PixelCoordinates;
 
 // Struct for a sequence of assign1_interfaces__msg__PixelCoordinates.

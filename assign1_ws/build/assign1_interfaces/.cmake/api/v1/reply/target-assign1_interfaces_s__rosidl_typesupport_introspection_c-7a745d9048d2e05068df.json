@@ -444,6 +444,14 @@
 	"dependencies" : 
 	[
 		{
+			"backtrace" : 9,
+			"id" : "assign1_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "assign1_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
 			"backtrace" : 43,
 			"id" : "assign1_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df"
 		},
@@ -454,14 +462,6 @@
 		{
 			"backtrace" : 44,
 			"id" : "assign1_interfaces__py::@760207ac48c6ef9ba732"
-		},
-		{
-			"backtrace" : 9,
-			"id" : "assign1_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 9,
-			"id" : "assign1_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "assign1_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",

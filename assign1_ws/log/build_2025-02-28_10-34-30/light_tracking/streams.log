@@ -1,0 +1,30 @@
+[0.023s] Invoking command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking': AMENT_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/oisin/ros2_ws/assign1_ws/build/light_tracking -- -j16 -l16
+[0.189s] [ 25%] [32mBuilding CXX object CMakeFiles/detector.dir/src/light_detector.cpp.o[0m
+[0.190s] [ 50%] [32mBuilding CXX object CMakeFiles/position.dir/src/object_position.cpp.o[0m
+[10.587s] [ 75%] [32m[1mLinking CXX executable detector[0m
+[10.855s] [ 75%] Built target detector
+[12.086s] [100%] [32m[1mLinking CXX executable position[0m
+[12.699s] [100%] Built target position
+[12.708s] Invoked command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking' returned '0': AMENT_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/oisin/ros2_ws/assign1_ws/build/light_tracking -- -j16 -l16
+[12.709s] Invoking command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking': AMENT_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/oisin/ros2_ws/assign1_ws/build/light_tracking
+[12.715s] -- Install configuration: ""
+[12.716s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/detector
+[12.720s] -- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/detector" to ""
+[12.720s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/position
+[12.724s] -- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/position" to ""
+[12.724s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/package_run_dependencies/light_tracking
+[12.724s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/parent_prefix_path/light_tracking
+[12.724s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/ament_prefix_path.sh
+[12.724s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/ament_prefix_path.dsv
+[12.725s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/path.sh
+[12.725s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/path.dsv
+[12.725s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.bash
+[12.725s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.sh
+[12.725s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.zsh
+[12.725s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.dsv
+[12.725s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.dsv
+[12.725s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/packages/light_tracking
+[12.725s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/cmake/light_trackingConfig.cmake
+[12.725s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/cmake/light_trackingConfig-version.cmake
+[12.725s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.xml
+[12.726s] Invoked command in '/home/oisin/ros2_ws/assign1_ws/build/light_tracking' returned '0': AMENT_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/oisin/ros2_ws/assign1_ws/build/light_tracking

@@ -1,6 +1,3 @@
-// create my own message type... based off turtle node type??
-// publish the x, y coord to a new topic
-
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/image.hpp"
 #include "assign1_interfaces/msg/pixel_coordinates.hpp"
@@ -31,7 +28,7 @@ public:
     }
 
 private:
-
+    // publishes 2d coordinates of centre of gravity of object 
     void publishCog()
     {
         auto msg = assign1_interfaces::msg::PixelCoordinates();
@@ -40,6 +37,8 @@ private:
         publisher_->publish(msg);
     }
 
+    // applies a binary threshold to the image, then calulates centre of
+    // gravity of remaining object
     void callbackImage(const sensor_msgs::msg::Image::SharedPtr msg)
     {
         // will need to change the "bgr8" to manage other formats of image
@@ -64,7 +63,6 @@ private:
         cv::imshow("Image with center",src);
         cv::waitKey('q'); 
     }
-
 
     int threshold_value_ {};
     cv::Point p_ {};

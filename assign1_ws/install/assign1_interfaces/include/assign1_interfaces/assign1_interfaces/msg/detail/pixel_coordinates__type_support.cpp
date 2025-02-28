@@ -41,7 +41,7 @@ void PixelCoordinates_fini_function(void * message_memory)
 static const ::rosidl_typesupport_introspection_cpp::MessageMember PixelCoordinates_message_member_array[2] = {
   {
     "x",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is key
@@ -59,7 +59,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember PixelCoordina
   },
   {
     "y",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is key

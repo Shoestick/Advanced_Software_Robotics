@@ -59,21 +59,21 @@ struct PixelCoordinates_
 
   // field types and members
   using _x_type =
-    uint8_t;
+    int16_t;
   _x_type x;
   using _y_type =
-    uint8_t;
+    int16_t;
   _y_type y;
 
   // setters for named parameter idiom
   Type & set__x(
-    const uint8_t & _arg)
+    const int16_t & _arg)
   {
     this->x = _arg;
     return *this;
   }
   Type & set__y(
-    const uint8_t & _arg)
+    const int16_t & _arg)
   {
     this->y = _arg;
     return *this;

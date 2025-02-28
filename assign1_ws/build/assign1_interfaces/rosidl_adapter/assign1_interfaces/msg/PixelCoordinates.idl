@@ -6,9 +6,9 @@
 module assign1_interfaces {
   module msg {
     struct PixelCoordinates {
-      uint8 x;
+      int16 x;
 
-      uint8 y;
+      int16 y;
     };
   };
 };

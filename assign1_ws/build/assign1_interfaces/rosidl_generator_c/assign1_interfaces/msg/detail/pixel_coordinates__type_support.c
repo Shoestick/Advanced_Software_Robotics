@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "assign1_interfaces/msg/detail/pixel_coordinates__struct.h"
-#include "assign1_interfaces/msg/detail/pixel_coordinates__type_support.h"
 #include "assign1_interfaces/msg/detail/pixel_coordinates__functions.h"
+#include "assign1_interfaces/msg/detail/pixel_coordinates__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus

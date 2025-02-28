@@ -56,7 +56,7 @@ bool assign1_interfaces__msg__pixel_coordinates__convert_from_py(PyObject * _pym
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->x = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->x = (int16_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // y
@@ -65,7 +65,7 @@ bool assign1_interfaces__msg__pixel_coordinates__convert_from_py(PyObject * _pym
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->y = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->y = (int16_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 
@@ -92,7 +92,7 @@ PyObject * assign1_interfaces__msg__pixel_coordinates__convert_to_py(void * raw_
   assign1_interfaces__msg__PixelCoordinates * ros_message = (assign1_interfaces__msg__PixelCoordinates *)raw_ros_message;
   {  // x
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->x);
+    field = PyLong_FromLong(ros_message->x);
     {
       int rc = PyObject_SetAttrString(_pymessage, "x", field);
       Py_DECREF(field);
@@ -103,7 +103,7 @@ PyObject * assign1_interfaces__msg__pixel_coordinates__convert_to_py(void * raw_
   }
   {  // y
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->y);
+    field = PyLong_FromLong(ros_message->y);
     {
       int rc = PyObject_SetAttrString(_pymessage, "y", field);
       Py_DECREF(field);

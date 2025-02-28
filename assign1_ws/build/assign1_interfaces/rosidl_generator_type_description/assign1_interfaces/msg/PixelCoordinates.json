@@ -6,7 +6,7 @@
         {
           "name": "x",
           "type": {
-            "type_id": 3,
+            "type_id": 4,
             "capacity": 0,
             "string_capacity": 0,
             "nested_type_name": ""
@@ -16,7 +16,7 @@
         {
           "name": "y",
           "type": {
-            "type_id": 3,
+            "type_id": 4,
             "capacity": 0,
             "string_capacity": 0,
             "nested_type_name": ""
@@ -30,7 +30,7 @@
   "type_hashes": [
     {
       "type_name": "assign1_interfaces/msg/PixelCoordinates",
-      "hash_string": "RIHS01_763ca4abc4993d703d300930b69b55f1fd1f42233c3159c730a9694caeedf410"
+      "hash_string": "RIHS01_c6c8b58b62189b9ddcdc107df74ec00f8bec6ea24fb8c9424936314d427ff001"
     }
   ]
 }

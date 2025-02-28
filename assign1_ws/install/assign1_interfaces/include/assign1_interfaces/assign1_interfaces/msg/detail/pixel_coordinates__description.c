@@ -11,10 +11,10 @@ assign1_interfaces__msg__PixelCoordinates__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x76, 0x3c, 0xa4, 0xab, 0xc4, 0x99, 0x3d, 0x70,
-      0x3d, 0x30, 0x09, 0x30, 0xb6, 0x9b, 0x55, 0xf1,
-      0xfd, 0x1f, 0x42, 0x23, 0x3c, 0x31, 0x59, 0xc7,
-      0x30, 0xa9, 0x69, 0x4c, 0xae, 0xed, 0xf4, 0x10,
+      0xc6, 0xc8, 0xb5, 0x8b, 0x62, 0x18, 0x9b, 0x9d,
+      0xdc, 0xdc, 0x10, 0x7d, 0xf7, 0x4e, 0xc0, 0x0f,
+      0x8b, 0xec, 0x6e, 0xa2, 0x4f, 0xb8, 0xc9, 0x42,
+      0x49, 0x36, 0x31, 0x4d, 0x42, 0x7f, 0xf0, 0x01,
     }};
   return &hash;
 }
@@ -38,7 +38,7 @@ static rosidl_runtime_c__type_description__Field assign1_interfaces__msg__PixelC
   {
     {assign1_interfaces__msg__PixelCoordinates__FIELD_NAME__x, 1, 1},
     {
-      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_UINT8,
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT16,
       0,
       0,
       {NULL, 0, 0},
@@ -48,7 +48,7 @@ static rosidl_runtime_c__type_description__Field assign1_interfaces__msg__PixelC
   {
     {assign1_interfaces__msg__PixelCoordinates__FIELD_NAME__y, 1, 1},
     {
-      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_UINT8,
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT16,
       0,
       0,
       {NULL, 0, 0},
@@ -77,8 +77,8 @@ assign1_interfaces__msg__PixelCoordinates__get_type_description(
 }
 
 static char toplevel_type_raw_source[] =
-  "uint8 x\n"
-  "uint8 y";
+  "int16 x\n"
+  "int16 y";
 
 static char msg_encoding[] = "msg";
 

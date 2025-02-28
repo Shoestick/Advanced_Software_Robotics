@@ -34,7 +34,7 @@ void assign1_interfaces__msg__PixelCoordinates__rosidl_typesupport_introspection
 static rosidl_typesupport_introspection_c__MessageMember assign1_interfaces__msg__PixelCoordinates__rosidl_typesupport_introspection_c__PixelCoordinates_message_member_array[2] = {
   {
     "x",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key
@@ -52,7 +52,7 @@ static rosidl_typesupport_introspection_c__MessageMember assign1_interfaces__msg
   },
   {
     "y",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key
