@@ -9,19 +9,23 @@ using namespace std::chrono_literals;
 class ObjectPositionNode : public rclcpp::Node
 {
 public:
-    ObjectPositionNode() : Node("object_position")
+    ObjectPositionNode() : Node("object_position"), p_(cv::Point(-1, -1))
     {
         // declare parameter controlling threshold value
         this->declare_parameter("threshold", 242);
+        this->declare_parameter("timer_period", 1.0);
 
-        // subscribe to /image topic and call callbackImage function when recieving data
+        // subscribe to /image topic and call callbackObjPos function when receiving data
         subscriber_ = this->create_subscription<sensor_msgs::msg::Image>(
         "image", 10,
-        std::bind(&ObjectPositionNode::callbackImage, this, std::placeholders::_1));
+        std::bind(&ObjectPositionNode::callbackObjPos, this, std::placeholders::_1));
 
-        // create a topic called cog that publishes publishCog every half second
+        
+        // create a topic called cog that publishes publishCog at timed interval
         publisher_ = this->create_publisher<assign1_interfaces::msg::PixelCoordinates>("cog_object", 10);
-        timer_ = this->create_wall_timer(1s, std::bind(&ObjectPositionNode::publishCog, this));
+        double timer_period { this->get_parameter("timer_period").as_double() };
+        timer_ = this->create_wall_timer(std::chrono::duration<double>(timer_period), 
+            std::bind(&ObjectPositionNode::publishCog, this));
 
         // text to terminal when starting
         RCLCPP_INFO(this->get_logger(), "Object position node has begun");
@@ -39,7 +43,7 @@ private:
 
     // applies a binary threshold to the image, then calulates centre of
     // gravity of remaining object
-    void callbackImage(const sensor_msgs::msg::Image::SharedPtr msg)
+    void callbackObjPos(const sensor_msgs::msg::Image::SharedPtr msg)
     {
         // will need to change the "bgr8" to manage other formats of image
         cv::Mat src = cv_bridge::toCvCopy(msg, "bgr8")->image;

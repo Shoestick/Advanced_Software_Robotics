@@ -12,10 +12,10 @@ LightDetector() : Node("light_detector")
         // declare parameter to later get
         this->declare_parameter("threshold", 130);
 
-        // begin subscriber to /image, call callbackImage when recieving something from the topic
+        // begin subscriber to /image, call callbackLuminance when recieving something from the topic
         subscriber_ = this->create_subscription<sensor_msgs::msg::Image>(
         "image", 10,
-        std::bind(&LightDetector::callbackImage, this, std::placeholders::_1));
+        std::bind(&LightDetector::callbackLuminance, this, std::placeholders::_1));
         
         // create a publisher called /bright, publish publishBright every half second
         publisher_ = this->create_publisher<example_interfaces::msg::String>("bright", 10);
@@ -27,7 +27,7 @@ LightDetector() : Node("light_detector")
 private:
     // finds the average pixel value of image and publishes whether or not
     // the value gets above a certain threshold, indicating light or dark
-    void callbackImage(const sensor_msgs::msg::Image::SharedPtr msg)
+    void callbackLuminance(const sensor_msgs::msg::Image::SharedPtr msg)
     {
         // load in variables to get the size of the msg.data 
         std::uint32_t rows = msg->height;
