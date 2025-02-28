@@ -59,24 +59,18 @@ private:
 
         threshold( grey, threshed, threshold_value_, 255, threshold_type );
 
+        // check if object exists before giving position value
         if(countNonZero(threshed))
         {
-            // find moments of the image
+            // use moments to calculate centroid of object
             cv::Moments m = cv::moments(threshed, true);
             p_ = cv::Point(m.m10/m.m00, m.m01/m.m00);
-            
-            // show the image with a point mark at the centroid
-            circle(src, p_, 5, cv::Scalar(128,0,0), -1);
-            cv::imshow("Image with center", src);
-            cv::waitKey('q');
         }
         else
         {
+            // no object value
             p_ = cv::Point(-1, -1);
-            RCLCPP_INFO(this->get_logger(), "no pixels bright enough");
         }
-
-         
     }
 
     int threshold_value_ {};

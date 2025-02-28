@@ -1,0 +1,23 @@
+[ 50%] Built target detector
+[ 75%] [32mBuilding CXX object CMakeFiles/position.dir/src/object_position.cpp.o[0m
+[100%] [32m[1mLinking CXX executable position[0m
+[100%] Built target position
+-- Install configuration: ""
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/detector
+-- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/position
+-- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/position" to ""
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/package_run_dependencies/light_tracking
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/parent_prefix_path/light_tracking
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/ament_prefix_path.sh
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/path.sh
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/path.dsv
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.bash
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.sh
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.zsh
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.dsv
+-- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.dsv
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/packages/light_tracking
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/cmake/light_trackingConfig.cmake
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/cmake/light_trackingConfig-version.cmake
+-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.xml

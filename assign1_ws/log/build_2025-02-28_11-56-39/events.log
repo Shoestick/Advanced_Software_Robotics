@@ -1,0 +1,165 @@
+[0.000000] (-) TimerEvent: {}
+[0.001016] (-) JobUnselected: {'identifier': 'assign1_interfaces'}
+[0.001140] (light_tracking) JobQueued: {'identifier': 'light_tracking', 'dependencies': OrderedDict({'assign1_interfaces': '/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces'})}
+[0.002639] (light_tracking) JobStarted: {'identifier': 'light_tracking'}
+[0.029256] (light_tracking) JobProgress: {'identifier': 'light_tracking', 'progress': 'cmake'}
+[0.030722] (light_tracking) JobProgress: {'identifier': 'light_tracking', 'progress': 'build'}
+[0.032164] (light_tracking) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/oisin/ros2_ws/assign1_ws/build/light_tracking', '--', '-j16', '-l16'], 'cwd': '/home/oisin/ros2_ws/assign1_ws/build/light_tracking', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'oisin', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/oisin', 'OLDPWD': '/home/oisin/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2546', 'SYSTEMD_EXEC_PID': '3141', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4609', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'oisin', 'JOURNAL_STREAM': '9:10146', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'oisin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/oisin-Legion-Slim-5-14APH8:@/tmp/.ICE-unix/2970,unix/oisin-Legion-Slim-5-14APH8:/tmp/.ICE-unix/2970', 'INVOCATION_ID': '232d7b6b71574c2dae95c3531e66d8d8', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:cff7ffbe-e48c-492b-939e-76abd162cd63', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/oisin/ros2_ws/assign1_ws/build/light_tracking', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.100583] (-) TimerEvent: {}
+[0.182386] (light_tracking) StdoutLine: {'line': b'[ 50%] Built target detector\n'}
+[0.192231] (light_tracking) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/position.dir/src/object_position.cpp.o\x1b[0m\n'}
+[0.200724] (-) TimerEvent: {}
+[0.301149] (-) TimerEvent: {}
+[0.401764] (-) TimerEvent: {}
+[0.502381] (-) TimerEvent: {}
+[0.603014] (-) TimerEvent: {}
+[0.703628] (-) TimerEvent: {}
+[0.804229] (-) TimerEvent: {}
+[0.904837] (-) TimerEvent: {}
+[1.005534] (-) TimerEvent: {}
+[1.106153] (-) TimerEvent: {}
+[1.206793] (-) TimerEvent: {}
+[1.307339] (-) TimerEvent: {}
+[1.408330] (-) TimerEvent: {}
+[1.508931] (-) TimerEvent: {}
+[1.609506] (-) TimerEvent: {}
+[1.709968] (-) TimerEvent: {}
+[1.810434] (-) TimerEvent: {}
+[1.910870] (-) TimerEvent: {}
+[2.011335] (-) TimerEvent: {}
+[2.111819] (-) TimerEvent: {}
+[2.212293] (-) TimerEvent: {}
+[2.312782] (-) TimerEvent: {}
+[2.413228] (-) TimerEvent: {}
+[2.513743] (-) TimerEvent: {}
+[2.614204] (-) TimerEvent: {}
+[2.714702] (-) TimerEvent: {}
+[2.815182] (-) TimerEvent: {}
+[2.915648] (-) TimerEvent: {}
+[3.016189] (-) TimerEvent: {}
+[3.116655] (-) TimerEvent: {}
+[3.217119] (-) TimerEvent: {}
+[3.317572] (-) TimerEvent: {}
+[3.418018] (-) TimerEvent: {}
+[3.518503] (-) TimerEvent: {}
+[3.618969] (-) TimerEvent: {}
+[3.719510] (-) TimerEvent: {}
+[3.820026] (-) TimerEvent: {}
+[3.920522] (-) TimerEvent: {}
+[4.020999] (-) TimerEvent: {}
+[4.121492] (-) TimerEvent: {}
+[4.221985] (-) TimerEvent: {}
+[4.322456] (-) TimerEvent: {}
+[4.422942] (-) TimerEvent: {}
+[4.523389] (-) TimerEvent: {}
+[4.623891] (-) TimerEvent: {}
+[4.724358] (-) TimerEvent: {}
+[4.824852] (-) TimerEvent: {}
+[4.925326] (-) TimerEvent: {}
+[5.025824] (-) TimerEvent: {}
+[5.126284] (-) TimerEvent: {}
+[5.226766] (-) TimerEvent: {}
+[5.327232] (-) TimerEvent: {}
+[5.427735] (-) TimerEvent: {}
+[5.528633] (-) TimerEvent: {}
+[5.629133] (-) TimerEvent: {}
+[5.729600] (-) TimerEvent: {}
+[5.830070] (-) TimerEvent: {}
+[5.930565] (-) TimerEvent: {}
+[6.031084] (-) TimerEvent: {}
+[6.131575] (-) TimerEvent: {}
+[6.232052] (-) TimerEvent: {}
+[6.332538] (-) TimerEvent: {}
+[6.433002] (-) TimerEvent: {}
+[6.533671] (-) TimerEvent: {}
+[6.634434] (-) TimerEvent: {}
+[6.734974] (-) TimerEvent: {}
+[6.835441] (-) TimerEvent: {}
+[6.935904] (-) TimerEvent: {}
+[7.036378] (-) TimerEvent: {}
+[7.136864] (-) TimerEvent: {}
+[7.237307] (-) TimerEvent: {}
+[7.337834] (-) TimerEvent: {}
+[7.438315] (-) TimerEvent: {}
+[7.538820] (-) TimerEvent: {}
+[7.639302] (-) TimerEvent: {}
+[7.740060] (-) TimerEvent: {}
+[7.840829] (-) TimerEvent: {}
+[7.941286] (-) TimerEvent: {}
+[8.041791] (-) TimerEvent: {}
+[8.142247] (-) TimerEvent: {}
+[8.242732] (-) TimerEvent: {}
+[8.343195] (-) TimerEvent: {}
+[8.443629] (-) TimerEvent: {}
+[8.544340] (-) TimerEvent: {}
+[8.644889] (-) TimerEvent: {}
+[8.745267] (-) TimerEvent: {}
+[8.845697] (-) TimerEvent: {}
+[8.946095] (-) TimerEvent: {}
+[9.046535] (-) TimerEvent: {}
+[9.147000] (-) TimerEvent: {}
+[9.247393] (-) TimerEvent: {}
+[9.347852] (-) TimerEvent: {}
+[9.448283] (-) TimerEvent: {}
+[9.548723] (-) TimerEvent: {}
+[9.649098] (-) TimerEvent: {}
+[9.749397] (-) TimerEvent: {}
+[9.849756] (-) TimerEvent: {}
+[9.950082] (-) TimerEvent: {}
+[10.050464] (-) TimerEvent: {}
+[10.150851] (-) TimerEvent: {}
+[10.251195] (-) TimerEvent: {}
+[10.351530] (-) TimerEvent: {}
+[10.451833] (-) TimerEvent: {}
+[10.552169] (-) TimerEvent: {}
+[10.652552] (-) TimerEvent: {}
+[10.752926] (-) TimerEvent: {}
+[10.853602] (-) TimerEvent: {}
+[10.953964] (-) TimerEvent: {}
+[11.054336] (-) TimerEvent: {}
+[11.154733] (-) TimerEvent: {}
+[11.255105] (-) TimerEvent: {}
+[11.355488] (-) TimerEvent: {}
+[11.455853] (-) TimerEvent: {}
+[11.556225] (-) TimerEvent: {}
+[11.656638] (-) TimerEvent: {}
+[11.757007] (-) TimerEvent: {}
+[11.857373] (-) TimerEvent: {}
+[11.957742] (-) TimerEvent: {}
+[12.058082] (-) TimerEvent: {}
+[12.158466] (-) TimerEvent: {}
+[12.258868] (-) TimerEvent: {}
+[12.359251] (-) TimerEvent: {}
+[12.459581] (-) TimerEvent: {}
+[12.520712] (light_tracking) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable position\x1b[0m\n'}
+[12.559748] (-) TimerEvent: {}
+[12.660120] (-) TimerEvent: {}
+[12.760516] (-) TimerEvent: {}
+[12.860894] (-) TimerEvent: {}
+[12.961274] (-) TimerEvent: {}
+[12.977798] (light_tracking) StdoutLine: {'line': b'[100%] Built target position\n'}
+[12.989738] (light_tracking) CommandEnded: {'returncode': 0}
+[12.990116] (light_tracking) JobProgress: {'identifier': 'light_tracking', 'progress': 'install'}
+[12.999345] (light_tracking) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/oisin/ros2_ws/assign1_ws/build/light_tracking'], 'cwd': '/home/oisin/ros2_ws/assign1_ws/build/light_tracking', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'oisin', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/oisin', 'OLDPWD': '/home/oisin/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2546', 'SYSTEMD_EXEC_PID': '3141', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4609', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'oisin', 'JOURNAL_STREAM': '9:10146', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'oisin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/oisin-Legion-Slim-5-14APH8:@/tmp/.ICE-unix/2970,unix/oisin-Legion-Slim-5-14APH8:/tmp/.ICE-unix/2970', 'INVOCATION_ID': '232d7b6b71574c2dae95c3531e66d8d8', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:cff7ffbe-e48c-492b-939e-76abd162cd63', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/oisin/ros2_ws/assign1_ws/build/light_tracking', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[13.006153] (light_tracking) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.006443] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/detector\n'}
+[13.006700] (light_tracking) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/position\n'}
+[13.012379] (light_tracking) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1_ws/install/light_tracking/lib/light_tracking/position" to ""\n'}
+[13.012755] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/package_run_dependencies/light_tracking\n'}
+[13.012903] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/parent_prefix_path/light_tracking\n'}
+[13.013033] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/ament_prefix_path.sh\n'}
+[13.013168] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/ament_prefix_path.dsv\n'}
+[13.013285] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/path.sh\n'}
+[13.013397] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/environment/path.dsv\n'}
+[13.013523] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.bash\n'}
+[13.013629] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.sh\n'}
+[13.013681] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.zsh\n'}
+[13.013776] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/local_setup.dsv\n'}
+[13.013833] (light_tracking) StdoutLine: {'line': b'-- Installing: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.dsv\n'}
+[13.013936] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/ament_index/resource_index/packages/light_tracking\n'}
+[13.013990] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/cmake/light_trackingConfig.cmake\n'}
+[13.014038] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/cmake/light_trackingConfig-version.cmake\n'}
+[13.014090] (light_tracking) StdoutLine: {'line': b'-- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/light_tracking/share/light_tracking/package.xml\n'}
+[13.014815] (light_tracking) CommandEnded: {'returncode': 0}
+[13.025028] (light_tracking) JobEnded: {'identifier': 'light_tracking', 'rc': 0}
+[13.025949] (-) EventReactorShutdown: {}
