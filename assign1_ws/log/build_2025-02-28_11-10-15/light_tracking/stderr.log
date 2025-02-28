@@ -1,0 +1,7 @@
+[01m[K/home/oisin/ros2_ws/assign1_ws/src/light_tracking/src/object_position.cpp:[m[K In member function ‘[01m[Kvoid ObjectPositionNode::[01;32m[KcallbackObjPos[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/oisin/ros2_ws/assign1_ws/src/light_tracking/src/object_position.cpp:62:16:[m[K [01;31m[Kerror: [m[K‘[01m[KhasNoneZero[m[K’ is not a member of ‘[01m[Kcv[m[K’
+   62 |         if(cv::[01;31m[KhasNoneZero[m[K(threshed))
+      |                [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/position.dir/build.make:76: CMakeFiles/position.dir/src/object_position.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/position.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
