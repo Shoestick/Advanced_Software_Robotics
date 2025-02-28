@@ -86,6 +86,7 @@ private:
 
         cv::Mat threshed {};
         threshold_value_ = this->get_parameter("threshold").as_int();
+        threshold_value_ = std::clamp(threshold_value_, 0, 255);
         int const threshold_type {0}; // binary threshold specifier
         
         threshold( grey, threshed, threshold_value_, 255, threshold_type );

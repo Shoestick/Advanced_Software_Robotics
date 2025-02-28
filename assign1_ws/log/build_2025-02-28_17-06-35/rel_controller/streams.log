@@ -1,0 +1,44 @@
+[0.010s] Invoking command in '/home/oisin/ros2_ws/assign1_ws/build/rel_controller': AMENT_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/oisin/ros2_ws/assign1_ws/build/rel_controller -- -j16 -l16
+[0.036s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.214s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.234s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.241s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.248s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.257s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.303s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.304s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.369s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.429s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.470s] -- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)
+[0.505s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[0.515s] -- Found assign1_interfaces: 0.0.0 (/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/share/assign1_interfaces/cmake)
+[0.598s] -- Configuring done (0.6s)
+[0.607s] -- Generating done (0.0s)
+[0.610s] -- Build files have been written to: /home/oisin/ros2_ws/assign1_ws/build/rel_controller
+[0.659s] [ 50%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
+[8.419s] [100%] [32m[1mLinking CXX executable controller[0m
+[8.738s] [100%] Built target controller
+[8.750s] Invoked command in '/home/oisin/ros2_ws/assign1_ws/build/rel_controller' returned '0': AMENT_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/oisin/ros2_ws/assign1_ws/build/rel_controller -- -j16 -l16
+[8.751s] Invoking command in '/home/oisin/ros2_ws/assign1_ws/build/rel_controller': AMENT_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/oisin/ros2_ws/assign1_ws/build/rel_controller
+[8.760s] -- Install configuration: ""
+[8.760s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/lib/rel_controller/controller
+[8.769s] -- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1_ws/install/rel_controller/lib/rel_controller/controller" to ""
+[8.769s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller/
+[8.769s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller//launch.xml
+[8.769s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller//launch.yaml
+[8.769s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/ament_index/resource_index/package_run_dependencies/rel_controller
+[8.770s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/ament_index/resource_index/parent_prefix_path/rel_controller
+[8.770s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller/environment/ament_prefix_path.sh
+[8.770s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller/environment/ament_prefix_path.dsv
+[8.770s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller/environment/path.sh
+[8.770s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller/environment/path.dsv
+[8.770s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller/local_setup.bash
+[8.770s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller/local_setup.sh
+[8.770s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller/local_setup.zsh
+[8.770s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller/local_setup.dsv
+[8.771s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller/package.dsv
+[8.771s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/ament_index/resource_index/packages/rel_controller
+[8.771s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller/cmake/rel_controllerConfig.cmake
+[8.771s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller/cmake/rel_controllerConfig-version.cmake
+[8.771s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/rel_controller/share/rel_controller/package.xml
+[8.772s] Invoked command in '/home/oisin/ros2_ws/assign1_ws/build/rel_controller' returned '0': AMENT_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/oisin/ros2_ws/assign1_ws/install/assign1_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/oisin/ros2_ws/assign1_ws/build/rel_controller

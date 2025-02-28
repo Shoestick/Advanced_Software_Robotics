@@ -62,7 +62,6 @@ private:
         {
             total += msg->data[i];
         }
-
         int avg { total / static_cast<int>(rows * step) };
 
         // get threshold parameter, make sure it's within range

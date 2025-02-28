@@ -1,0 +1,79 @@
+[0.011s] Invoking command in '/home/oisin/ros2_ws/assign1_ws/build/relbot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oisin/ros2_ws/assign1_ws/build/relbot_simulator -- -j16 -l16
+[0.039s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.261s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.287s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.298s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.308s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.321s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.380s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.381s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.450s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.515s] -- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)
+[0.564s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.583s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.605s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[0.608s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.678s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.679s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.679s] -- Configured cppcheck include dirs: /home/oisin/ros2_ws/assign1_ws/src/relbot_simulator/include;/home/oisin/ros2_ws/assign1_ws/src/relbot_simulator/common;$<BUILD_INTERFACE:/home/oisin/ros2_ws/assign1_ws/src/relbot_simulator/include>;$<BUILD_INTERFACE:/home/oisin/ros2_ws/assign1_ws/src/relbot_simulator/common>
+[0.679s] -- Configured cppcheck exclude dirs and/or files: 
+[0.680s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.680s] -- Configured cpplint exclude dirs and/or files: 
+[0.681s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.681s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.681s] -- Added test 'lint_cmake' to check CMake code style
+[0.681s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.682s] -- Added test 'uncrustify' to check C / C++ code style
+[0.682s] -- Configured uncrustify additional arguments: 
+[0.682s] -- Added test 'xmllint' to check XML markup files
+[0.683s] -- Configuring done (0.6s)
+[0.694s] -- Generating done (0.0s)
+[0.698s] -- Build files have been written to: /home/oisin/ros2_ws/assign1_ws/build/relbot_simulator
+[0.745s] [ 55%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/src/Plant.cpp.o[0m
+[0.745s] [ 55%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/MotionProfiles.cpp.o[0m
+[0.745s] [ 55%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/EulerAngles.cpp.o[0m
+[0.745s] [ 55%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/src/relbot_simulator.cpp.o[0m
+[0.745s] [ 55%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/xxfuncs.cpp.o[0m
+[0.746s] [ 66%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/xxinteg.cpp.o[0m
+[0.746s] [ 88%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/xxinverse.cpp.o[0m
+[0.746s] [ 88%] [32mBuilding CXX object CMakeFiles/relbot_simulator.dir/common/xxmatrix.cpp.o[0m
+[12.199s] [100%] [32m[1mLinking CXX executable relbot_simulator[0m
+[12.946s] [100%] Built target relbot_simulator
+[12.960s] Invoked command in '/home/oisin/ros2_ws/assign1_ws/build/relbot_simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oisin/ros2_ws/assign1_ws/build/relbot_simulator -- -j16 -l16
+[12.961s] Invoking command in '/home/oisin/ros2_ws/assign1_ws/build/relbot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/oisin/ros2_ws/assign1_ws/build/relbot_simulator
+[12.968s] -- Install configuration: ""
+[12.968s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/lib/relbot_simulator/relbot_simulator
+[12.980s] -- Set non-toolchain portion of runtime path of "/home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/lib/relbot_simulator/relbot_simulator" to ""
+[12.980s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include
+[12.981s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include/xxfuncs.h
+[12.981s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include/xxinverse.h
+[12.981s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include/xxmatrix.h
+[12.981s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include/xxmodel.h
+[12.981s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include/xxtypes.h
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include/EulerAngles.h
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include/MotionProfiles.cpp
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include/xxfuncs.cpp
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include/xxmatrix.cpp
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include/xxinverse.cpp
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include/xxinteg.h
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include/xxinteg.cpp
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include/EulerAngles.cpp
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/include/MotionProfiles.h
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/ament_index/resource_index/package_run_dependencies/relbot_simulator
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/ament_index/resource_index/parent_prefix_path/relbot_simulator
+[12.982s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/relbot_simulator/environment/ament_prefix_path.sh
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/relbot_simulator/environment/ament_prefix_path.dsv
+[12.982s] -- Installing: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/relbot_simulator/environment/path.sh
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/relbot_simulator/environment/path.dsv
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/relbot_simulator/local_setup.bash
+[12.982s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/relbot_simulator/local_setup.sh
+[12.983s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/relbot_simulator/local_setup.zsh
+[12.983s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/relbot_simulator/local_setup.dsv
+[12.983s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/relbot_simulator/package.dsv
+[12.983s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/ament_index/resource_index/packages/relbot_simulator
+[12.983s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/relbot_simulator/cmake/relbot_simulatorConfig.cmake
+[12.983s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/relbot_simulator/cmake/relbot_simulatorConfig-version.cmake
+[12.983s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/relbot_simulator/package.xml
+[12.983s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/relbot_simulator//launch
+[12.983s] -- Up-to-date: /home/oisin/ros2_ws/assign1_ws/install/relbot_simulator/share/relbot_simulator//launch/relbot_simulator.launch.py
+[12.984s] Invoked command in '/home/oisin/ros2_ws/assign1_ws/build/relbot_simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/oisin/ros2_ws/assign1_ws/build/relbot_simulator
